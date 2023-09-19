@@ -17,8 +17,14 @@ const config: Config = {
       },
       fontFamily: {
         heading: ['Bame', 'Arial', 'Helvetica', 'sans-serif'],
-        body: ['"DM Sans"', 'DM Sans', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+        body: ['"DM Sans"', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
       },
+      maxWidth: ({ theme }) => ({
+        section: `calc(100% - ${theme('spacing.8')})`,
+      }),
+      flexGrow: {
+        2: '2',
+      }
     },
   },
   plugins: [],
