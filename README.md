@@ -1,3 +1,13 @@
+# Roadmap (roughly prioritised)
+* migrate Heading & referenced components recursively
+* Migrate index route & comps recursively
+* add custom fonts
+* check nothing missed, update readme/roadmap
+
+
+
+# Old Readme...
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

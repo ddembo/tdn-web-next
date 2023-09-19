@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import { twMerge } from 'tailwind-merge';
 import type { ReactNode } from 'react';
 
 interface SectionProps {
@@ -15,7 +15,13 @@ interface SectionProps {
 const Section = ({ children, as, reverseColumns }: SectionProps) => {
   const Element = as || 'section';
   return (
-    <Element className={clsx("tdn-section", "flex flex-col gap-4 items-start justify-space p-1 mx-auto max-w-section lg:flex-row lg:flex-wrap lg:w-[978px]", reverseColumns && "lg:flex-row-reverse")}>
+    <Element
+      className={twMerge(
+        'tdn-section',
+        'flex flex-col gap-x-4 items-start justify-space p-1 mx-auto max-w-section lg:flex-row lg:flex-wrap lg:w-[978px]',
+        reverseColumns && 'lg:flex-row-reverse',
+      )}
+    >
       {children}
     </Element>
   );
@@ -28,8 +34,8 @@ interface ColumnProps {
 }
 const Column = ({ children, doubleWidth }: ColumnProps) => (
   <div
-    className={clsx(
-      'w-100 flex flex-col basis-full shrink-0 lg:grow-1 lg:basis-auto',
+    className={twMerge(
+      'w-full flex flex-col basis-full shrink-0 lg:grow-1 lg:basis-auto',
       doubleWidth && 'grow-2 lg:grow-2 lg:basis-auto',
     )}
   >

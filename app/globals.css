@@ -26,6 +26,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+a {
+  color: inherit;
+}
+
 @layer components {
   .tdn-section .tdn-section {
     padding: 0;
