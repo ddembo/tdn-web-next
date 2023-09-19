@@ -11,16 +11,16 @@ interface ButtonLinkProps {
   children: ReactNode;
   href: string;
   variant?: ButtonLinkVariant;
+  /** Shrink to fit `ButtonLink` content */
   inline?: boolean;
+  /** Make this a nav link with active styling */
+  nav?: boolean;
 }
 
-/* Renders either <a target="_blank"> (if 'href' starts with http), or a NextJS
-   <Link>. Automatically applies active styling if href === current route
-
-   Can apply button variant styling: base (default), cta, or subtle.
-   inline prop causes button to shrink to fit label rather than display:block
+/* Renders either `<a target="_blank">` (if `href` starts with an external prefix), or a NextJS
+   `<Link>` that can optionally apply active styling if href === current route.
  */
-const ButtonLink = ({ children, href, variant, inline }: ButtonLinkProps) => {
+const ButtonLink = ({ children, href, variant, inline, nav }: ButtonLinkProps) => {
   const isExternal = EXTERNAL_PREFIXES.some((prefix) => href.startsWith(prefix));
 
   const baseStyles =
@@ -42,8 +42,10 @@ const ButtonLink = ({ children, href, variant, inline }: ButtonLinkProps) => {
     );
   }
 
+  // If href doesn't start with an external link prefix, it is an internal nav link. NavButtonLink
+  // automatically applies active styling if href === current route. Is a client component.
   return (
-    <NavButtonLink href={href} inline={inline} className={className}>
+    <NavButtonLink href={href} className={className} nav={nav}>
       {children}
     </NavButtonLink>
   );
