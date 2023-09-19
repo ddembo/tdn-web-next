@@ -7,7 +7,19 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'tdn-primary': '#102766',
+        'tdn-secondary': '#405bb2',
+        'tdn-highlight': '#ffd3da',
+        'tdn-highlight-pale': '#fff3f5',
+        'tdn-highlight-dark': '#ecadb7',
+      },
+      fontFamily: {
+        heading: ['Bame', 'Arial', 'Helvetica', 'sans-serif'],
+        body: ['"DM Sans"', 'DM Sans', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };
