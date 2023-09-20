@@ -29,6 +29,25 @@ const config: Config = {
       flexGrow: {
         2: '2',
       },
+      keyframes: {
+        float: {
+          '0%,33%': {
+            filter: 'drop-shadow(0 0px 0px rgba(0, 0, 0, 0))',
+            transform: 'translatey(0)',
+          },
+          '66%': {
+            filter: 'drop-shadow(0 8px 4px rgba(0, 0, 0, 0.6))',
+            transform: 'translatey(-0.8rem)',
+          },
+          '100%': {
+            filter: 'drop-shadow(0 0px 0px rgba(0, 0, 0, 0))',
+            transform: 'translatey(0)',
+          },
+        }
+      },
+      animation: {
+        float: 'float 3.5s ease-in-out infinite',
+      }
     },
   },
   plugins: [],
