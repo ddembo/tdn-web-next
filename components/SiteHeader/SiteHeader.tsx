@@ -31,22 +31,22 @@ export default function SiteHeader() {
           {/* TODO: extract list component (duplicated in page.tsx) */}
           <ul className="self-center flex flex-col items-stretch w-full p-0 my-0 list-none">
             <li className="block py-2">
-              <ButtonLink nav href=".">
+              <ButtonLink nav href="/">
                 Home
               </ButtonLink>
             </li>
             <li className="block py-2">
-              <ButtonLink nav href="prices">
+              <ButtonLink nav href="/prices">
                 Price Menu
               </ButtonLink>
             </li>
             <li className="block py-2">
-              <ButtonLink nav href="faq">
+              <ButtonLink nav href="/faq">
                 FAQ
               </ButtonLink>
             </li>
             <li className="block py-2">
-              <ButtonLink href="#booking" variant="cta">
+              <ButtonLink href="./#booking" variant="cta">
                 Book now
               </ButtonLink>
             </li>
