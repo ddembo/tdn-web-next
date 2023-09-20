@@ -2,7 +2,9 @@
 
 Website for The Dreamy Nails, a client with a home studio for manicures and nail art.
 
-While currently under development, this is a professional website for a real business, and the initial version will be deployed in the near future once content is more complete.
+While currently under development, this is a professional website for a real business, and the initial version will be deployed in the near future once content is more complete. The client kindly agreed to make the source code open source.
+
+Current design is MVP; logo and colour palette were pre-existing and low quality, and things like spacing and fonts can be greatly improved. The client has asked for my help refreshing all branding with their input after the initial launch (getting deployed and indexed by search engines is priority).
 
 ## Roadmap (roughly prioritised)
 * finish adding homepage content
