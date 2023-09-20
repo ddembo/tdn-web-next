@@ -18,6 +18,7 @@ export default function SiteHeader() {
         <Image
           src={tdnLogoOnly}
           alt="The Dreamy Nails Premium BIAB, GELX & Press-ons logo"
+          quality={100}
         />
       </Link>
       <SiteHeaderToggle isExpanded={isExpanded} onClick={() => setExpanded((prev) => !prev)} />
@@ -36,13 +37,13 @@ export default function SiteHeader() {
               </ButtonLink>
             </li>
             <li className="block py-2">
-              <ButtonLink nav href="/prices">
-                Price Menu
+              <ButtonLink nav href="/about">
+                About me
               </ButtonLink>
             </li>
             <li className="block py-2">
-              <ButtonLink nav href="/faq">
-                FAQ
+              <ButtonLink nav href="/services">
+                Service Menu
               </ButtonLink>
             </li>
             <li className="block py-2">

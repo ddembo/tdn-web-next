@@ -20,13 +20,13 @@ export default function SiteFooter() {
               </ButtonLink>
             </li>
             <li className={listItemStyles}>
-              <ButtonLink inline href="/prices" variant="subtle">
-                Price Menu
+              <ButtonLink inline href="/about" variant="subtle">
+                About me
               </ButtonLink>
             </li>
             <li className={listItemStyles}>
-              <ButtonLink inline href="/faq" variant="subtle">
-                FAQ
+              <ButtonLink inline href="/services" variant="subtle">
+                Service menu
               </ButtonLink>
             </li>
           </ul>
