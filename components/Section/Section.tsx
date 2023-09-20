@@ -35,8 +35,8 @@ interface ColumnProps {
 const Column = ({ children, doubleWidth }: ColumnProps) => (
   <div
     className={twMerge(
-      'w-full flex flex-col basis-full shrink-0 lg:grow-1 lg:basis-auto',
-      doubleWidth && 'grow-2 lg:grow-2 lg:basis-auto',
+      'w-full flex flex-col basis-full shrink-0 lg:grow lg:basis-0',
+      doubleWidth && 'grow-2 lg:grow-2 lg:basis-0',
     )}
   >
     {children}
