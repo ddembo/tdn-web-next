@@ -19,9 +19,9 @@ const Hero = ({ expanded, heading, subtitle, feature }: HeroProps) => {
         expanded && 'lg:mt-[-60px] lg:h-screen',
       )}
     >
-      <div className="grow-0 max-w-[296px]"> 
+      <div className="grow-0 max-w-[296px] text-tdn-primary"> 
         <h1>{heading}</h1>
-        <p className="font-heading text-[1.75rem] font-light text-center lg:text-left" role="doc-subtitle">
+        <p className="pt-6 font-heading tracking-wide text-2xl font-normal text-center lg:text-left" role="doc-subtitle">
           {subtitle}
         </p>
       </div>

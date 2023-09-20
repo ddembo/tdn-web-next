@@ -28,9 +28,9 @@ const ButtonLink = ({ children, href, variant, inline, nav }: ButtonLinkProps) =
   const isExternal = !INTERNAL_LINK_REGEX.test(href);
 
   const baseStyles =
-    "relative block py-3 px-8 mx-auto font-heading font-light text-center uppercase tracking-wider no-underline bg-neutral-100 transition-all duration-300 before:content-[''] before:absolute before:block before:w-full before:h-0.5 before:bottom-0 before:left-0 before:bg-tdn-primary before:scale-x-0 before:transition-transform before:duration-300 before:ease-linear hover:bg-white hover:shadow-md hover:before:scale-x-100 lg:max-w-[200px]";
+    "relative block py-3 px-8 mx-auto font-heading font-normal text-center uppercase tracking-wider no-underline bg-neutral-100 transition-all duration-300 before:content-[''] before:absolute before:block before:w-full before:h-0.5 before:bottom-0 before:left-0 before:bg-tdn-primary before:scale-x-0 before:transition-transform before:duration-300 before:ease-linear hover:bg-white hover:shadow-md hover:before:scale-x-100 lg:max-w-[200px]";
   const variantStyles: { [k in ButtonLinkVariant]?: string } = {
-    cta: 'bg-tdn-highlight font-semibold before:h-1 before:bg-tdn-highlight-dark hover:bg-tdn-highlight-pale',
+    cta: 'bg-tdn-highlight font-bold before:h-1 before:bg-tdn-highlight-dark hover:bg-tdn-highlight-pale',
     subtle: 'bg-transparent shadow-none before:bg-tdn-highlight hover:bg-tdn-secondary hover:shadow-none',
   };
   const inlineStyles = ' inline-block p-2 pt-1';

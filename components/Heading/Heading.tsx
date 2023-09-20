@@ -1,8 +1,12 @@
 import type { ReactNode } from 'react';
+import { twMerge } from 'tailwind-merge';
+
+// TODO: finish implementing styles
+type HeadingVariant = 'h1' | 'h2' | 'h3';
 
 interface HeadingProps {
   children: ReactNode;
-  variant?: 'h1' | 'h2' | 'h3'; // TODO: finish implementing styles
+  variant?: HeadingVariant; 
   as?: Extract<keyof JSX.IntrinsicElements, 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'>;
 }
 
@@ -14,8 +18,14 @@ interface HeadingProps {
 */
 const Heading = ({ variant = 'h2', children, as = 'h2' }: HeadingProps) => {
   const Element = as || 'h2';
-  const headingClass = 'heading heading--' + variant;
-  return <Element className={headingClass}>{children}</Element>;
+  const baseStyles = 'font-heading mb-5 tracking-wide lg:max-w-[66%]'
+  const variantStyles: { [k in HeadingVariant]?: string } = {
+    h1: 'font-normal text-5xl uppercase leading-tight lg:max-w-[75%]',
+    h2: 'font-normal text-4xl',
+    h3: 'font-light text-4xl',
+  };
+  const className = twMerge(baseStyles, variantStyles[variant]);
+  return <Element className={className}>{children}</Element>;
 };
 
 export const H1 = ({ children, variant }: Omit<HeadingProps, 'as'>) => (

@@ -16,6 +16,11 @@
   }
 } */
 
+:root {
+  @apply text-tdn-primary;
+  font-size: 16px;
+}
+
 html,
 body {
   padding: 0;
@@ -34,10 +39,20 @@ a {
 p {
   font-size: 1.125rem;
   font-weight: 250;
+  margin-top: 1rem;
 }
 
 p:first-of-type {
-  margin-block-start: 0;
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading m-0;
 }
 
 @layer components {
