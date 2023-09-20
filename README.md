@@ -1,5 +1,6 @@
-# Roadmap (roughly prioritised)
-* migrate Heading & referenced components recursively
+# The Dreamy Nails Website
+
+## Roadmap (roughly prioritised)
 * Migrate index route & comps recursively
 * add custom fonts
 * check nothing missed, update readme/roadmap

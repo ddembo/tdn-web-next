@@ -2,6 +2,7 @@ import Image from 'next/image';
 import ButtonLink from '../ButtonLink/ButtonLink';
 import Section from '../Section/Section';
 
+// consider a List component
 const listStyles = 'inline-block p-0 m-0 pb-4 w-full list-none'
 const listItemStyles = "inline text-tdn-highlight before:content-['·'] before:mx-2 before:first-of-type:content-none"
 

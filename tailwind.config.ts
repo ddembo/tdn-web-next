@@ -1,4 +1,9 @@
 import type { Config } from 'tailwindcss';
+import type { PluginUtils } from 'tailwindcss/types/config';
+
+const widthExtensions = ({ theme }: PluginUtils) => ({
+  section: `calc(100% - ${theme('spacing.8')})`,
+});
 
 const config: Config = {
   content: [
@@ -19,12 +24,11 @@ const config: Config = {
         heading: ['Bame', 'Arial', 'Helvetica', 'sans-serif'],
         body: ['"DM Sans"', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
       },
-      maxWidth: ({ theme }) => ({
-        section: `calc(100% - ${theme('spacing.8')})`,
-      }),
+      maxWidth: widthExtensions,
+      width: widthExtensions,
       flexGrow: {
         2: '2',
-      }
+      },
     },
   },
   plugins: [],

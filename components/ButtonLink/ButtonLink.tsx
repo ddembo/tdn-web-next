@@ -1,9 +1,9 @@
 import type { ReactNode } from 'react';
 import {twMerge} from 'tailwind-merge';
 
-import NavButtonLink from './NavButtonLink';
+import NavButtonLink from './NavButtonLink'; // CLIENT COMPONENT
 
-const EXTERNAL_PREFIXES = ['http', 'mailto'];
+const INTERNAL_LINK_REGEX = /^(\.|\.\.)?\//; // Match ./, ../, or / at start of string
 
 type ButtonLinkVariant = 'cta' | 'subtle';
 
@@ -17,11 +17,15 @@ interface ButtonLinkProps {
   nav?: boolean;
 }
 
-/* Renders either `<a target="_blank">` (if `href` starts with an external prefix), or a NextJS
-   `<Link>` that can optionally apply active styling if href === current route.
+/* Renders a link styled as a button. Underlying element is determiend by `href`:
+  - if href starts with `/` or `./` or `../`, it is an internal routing link, so use a NextJS `<Link>` with
+    option to style active nav routes.
+  - otherwise, it is an external link (http, mailto, tel, etc) so we use an `<a target="_blank">`
+
+  This separation ensures a client component is only used when absolutely necessary.
  */
 const ButtonLink = ({ children, href, variant, inline, nav }: ButtonLinkProps) => {
-  const isExternal = EXTERNAL_PREFIXES.some((prefix) => href.startsWith(prefix));
+  const isExternal = !INTERNAL_LINK_REGEX.test(href);
 
   const baseStyles =
     "relative block py-3 px-8 mx-auto font-heading font-light text-center uppercase tracking-wider no-underline bg-neutral-100 transition-all duration-300 before:content-[''] before:absolute before:block before:w-full before:h-0.5 before:bottom-0 before:left-0 before:bg-tdn-primary before:scale-x-0 before:transition-transform before:duration-300 before:ease-linear hover:bg-white hover:shadow-md hover:before:scale-x-100 lg:max-w-[200px]";
@@ -42,8 +46,6 @@ const ButtonLink = ({ children, href, variant, inline, nav }: ButtonLinkProps) =
     );
   }
 
-  // If href doesn't start with an external link prefix, it is an internal nav link. NavButtonLink
-  // automatically applies active styling if href === current route. Is a client component.
   return (
     <NavButtonLink href={href} className={className} nav={nav}>
       {children}
