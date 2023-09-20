@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import type { Metadata } from 'next/types';
 
 import Section from '@/components/Section/Section';
 import { H2 } from '@/components/Heading/Heading';
@@ -8,6 +9,10 @@ import Hero from '@/components/Hero/Hero';
 
 import tdnLogoHero from '@/public/tdn-logo-hero.png';
 import tdnHeroSamples from '@/public/tdn-hero-samples.png';
+
+export const metadata: Metadata = {
+  title: 'The Dreamy Nails | Home',
+};
 
 export default function Home() {
   return (
