@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import ButtonLink from '../ButtonLink/ButtonLink';
 import Section from '../Section/Section';
+import InstagramLogo from '../icons/InstagramLogo';
+import TikTokLogo from '../icons/TikTokLogo';
 
 // consider a List component
 const listStyles = 'inline-block p-0 m-0 pb-4 w-full list-none'
@@ -33,22 +35,24 @@ export default function SiteFooter() {
           <li className={listItemStyles}>
             <ButtonLink inline href="https://instagram.com/thedreamynails" variant="subtle">
               {/* TODO: need to refactor svg's into components so i can change the color. u_u */}
-              <Image
+              <InstagramLogo />
+              {/* <Image
                 src="./logo-instagram.svg"
                 alt="Follow The Dreamy Nails on Instagram"
                 width={24}
                 height={24}
-              />
+              /> */}
             </ButtonLink>
           </li>
           <li className={listItemStyles}>
             <ButtonLink inline href="https://www.tiktok.com/@thedreamynails" variant="subtle">
-              <Image
+              <TikTokLogo />
+              {/* <Image
                 src="./logo-tiktok.svg"
                 alt="Follow The Dreamy Nails on TikTok"
                 width={24}
                 height={24}
-              />
+              /> */}
             </ButtonLink>
           </li>
         </ul>
