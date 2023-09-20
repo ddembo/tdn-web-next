@@ -7,6 +7,7 @@ While currently under development, this is a professional website for a real bus
 Current design is MVP; logo and colour palette were pre-existing and low quality, and things like spacing and fonts can be greatly improved. The client has asked for my help refreshing all branding with their input after the initial launch (getting deployed and indexed by search engines is priority).
 
 ## Roadmap (roughly prioritised)
+* favicon update
 * finish adding homepage content
 * Integrate Instagram API for showing recent work
 * implement missing content pages (FAQ, About)
@@ -19,6 +20,8 @@ Current design is MVP; logo and colour palette were pre-existing and low quality
 * integrate shopify
 * Implement end-to-end tests
 * Start documenting components in storybook
+* add aria roles, perform accessibility checks
+* performance tuning
 
 ## Getting started
 
@@ -30,6 +33,6 @@ npm run dev
 
 ## Discussion & decisions made
 
-### Styling
+### Framework
 
-I decided to use TailwindCSS, purely because I normally avoid it as much as possible. I've always found it slower than writing raw CSS, personally, and I dislike the mess it turns your markup into, but in order to give it a fair appraisal I need to become fluent with it as "it's faster once you're used to it" is one of the main arguments for its use.
+TODO: talk about originally using Remix 

@@ -43,7 +43,7 @@ export default function Home() {
       </Container>
 
       <Section>
-        <div id='booking' />
+        <div id='booking' className='hidden' />
         <H2>Ready to make your nail dreams come true?</H2>
         <Section as="div">
           <Section.Column doubleWidth>
