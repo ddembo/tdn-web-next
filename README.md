@@ -39,6 +39,10 @@ TODO
 
 ## Discussion & decisions made
 
+### Branching strategy
+
+Will be using gitflow when this is ready for deployment; until then, I'm committing directly to the main branch to speed up the bootstrapping phase.
+
 ### Framework
 
 TODO: talk about originally using Remix 

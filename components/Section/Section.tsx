@@ -18,7 +18,7 @@ const Section = ({ children, as, reverseColumns }: SectionProps) => {
     <Element
       className={twMerge(
         'tdn-section', // REQUIRED
-        'flex flex-col gap-x-4 items-start justify-space p-1 mx-auto max-w-section lg:flex-row lg:flex-wrap lg:w-[978px]',
+        'flex flex-col gap-x-4 items-start justify-space px-8 py-4 mx-auto lg:flex-row lg:flex-wrap lg:w-[978px] lg:px-4',
         reverseColumns && 'lg:flex-row-reverse',
       )}
     >
