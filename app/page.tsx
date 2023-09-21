@@ -3,7 +3,6 @@ import type { Metadata } from 'next/types';
 
 import Section from '@/components/Section/Section';
 import { H2 } from '@/components/Heading/Heading';
-import ButtonLink from '@/components/ButtonLink/ButtonLink';
 import Container from '@/components/Container/Container';
 import Hero from '@/components/Hero/Hero';
 
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className='grow'>
+    <div className="grow">
       <Hero
         expanded
         heading={<Image src={tdnLogoHero} alt="Welcome to The Dreamy Nails" quality={100} />}
@@ -46,39 +45,6 @@ export default function Home() {
           </Section.Column>
         </Section>
       </Container>
-
-      <Section>
-        <div id="booking" className="hidden" />
-        <H2>Ready to make your nail dreams come true?</H2>
-        <Section as="div">
-          <Section.Column doubleWidth>
-            <p>
-              Please bear with us while we finish building our website - we&apos;ll be introducing a
-              booking system very soon!
-            </p>
-            <p>
-              In the meantime, all bookings are done via our Instagram page - send us a DM telling
-              us what you&apos;d like and your preferred date and time, and we&apos;ll get you
-              booked in ASAP.
-            </p>
-          </Section.Column>
-          <Section.Column>
-            <ul className="self-center flex flex-col items-stretch w-full p-0 my-0 list-none">
-              <li className="block py-2">
-                <ButtonLink href="/services">Service menu</ButtonLink>
-              </li>
-              {/* <li className="block py-2">
-                <ButtonLink href="/faq">Booking FAQ</ButtonLink>
-              </li> */}
-              <li className="block py-2">
-                <ButtonLink href="https://instagram.com/thedreamynails" variant="cta">
-                  Book now
-                </ButtonLink>
-              </li>
-            </ul>
-          </Section.Column>
-        </Section>
-      </Section>
     </div>
   );
 }

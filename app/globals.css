@@ -34,6 +34,8 @@ body {
 
 a {
   color: inherit;
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 p {

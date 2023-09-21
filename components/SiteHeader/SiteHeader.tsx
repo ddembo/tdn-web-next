@@ -3,6 +3,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 
@@ -12,6 +13,8 @@ import tdnLogoOnly from '@/public/tdn-logo-only.png';
 
 export default function SiteHeader() {
   const [isExpanded, setExpanded] = useState(false);
+  const ctaLink = usePathname() + '/#booking';
+
   return (
     <header className="z-50 sticky flex items-center justify-between bg-white top-0 w-full py-2 px-4 mx-auto">
       <Link href="/">
@@ -47,7 +50,7 @@ export default function SiteHeader() {
               </ButtonLink>
             </li>
             <li className="block py-2">
-              <ButtonLink href="./#booking" variant="cta">
+              <ButtonLink href={ctaLink} variant="cta">
                 Book now
               </ButtonLink>
             </li>
