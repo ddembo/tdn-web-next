@@ -10,7 +10,7 @@ const listItemStyles = "inline text-tdn-highlight before:content-['·'] before:m
 
 export default function SiteFooter() {
   return (
-    <footer className="pt-4 mt-4 text-tdn-highlight text-xs text-center bg-tdn-primary">
+    <footer className="justify-self-end w-full pt-4 mt-4 text-tdn-highlight text-xs text-center bg-tdn-primary">
       <Section as="div">
         <nav className="w-full">
           <ul className={listStyles}>

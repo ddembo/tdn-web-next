@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
+    <div className='grow'>
       <Hero
         expanded
         heading={<Image src={tdnLogoHero} alt="Welcome to The Dreamy Nails" quality={100} />}
@@ -48,7 +48,7 @@ export default function Home() {
       </Container>
 
       <Section>
-        <div id='booking' className='hidden' />
+        <div id="booking" className="hidden" />
         <H2>Ready to make your nail dreams come true?</H2>
         <Section as="div">
           <Section.Column doubleWidth>
@@ -79,6 +79,6 @@ export default function Home() {
           </Section.Column>
         </Section>
       </Section>
-    </>
+    </div>
   );
 }

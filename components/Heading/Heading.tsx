@@ -6,6 +6,7 @@ type HeadingVariant = 'h1' | 'h2' | 'h3';
 
 interface HeadingProps {
   children: ReactNode;
+  className?: string;
   variant?: HeadingVariant; 
   as?: Extract<keyof JSX.IntrinsicElements, 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'>;
 }
@@ -16,7 +17,7 @@ interface HeadingProps {
    <H2 variant="h4">My heading</H2>
    ```
 */
-const Heading = ({ variant = 'h2', children, as = 'h2' }: HeadingProps) => {
+const Heading = ({ variant = 'h2', children, as = 'h2', className: mergeClasses }: HeadingProps) => {
   const Element = as || 'h2';
   const baseStyles = 'font-heading mb-5 tracking-wide lg:max-w-[66%]'
   const variantStyles: { [k in HeadingVariant]?: string } = {
@@ -24,18 +25,18 @@ const Heading = ({ variant = 'h2', children, as = 'h2' }: HeadingProps) => {
     h2: 'font-normal text-4xl',
     h3: 'font-light text-4xl',
   };
-  const className = twMerge(baseStyles, variantStyles[variant]);
+  const className = twMerge(baseStyles, variantStyles[variant], mergeClasses);
   return <Element className={className}>{children}</Element>;
 };
 
-export const H1 = ({ children, variant }: Omit<HeadingProps, 'as'>) => (
-  <Heading as='h1' variant={variant || 'h1'}>
+export const H1 = ({ children, variant, ...restProps }: Omit<HeadingProps, 'as'>) => (
+  <Heading as='h1' variant={variant || 'h1'} {...restProps}>
     {children}
   </Heading>
 );
 
-export const H2 = ({ children, variant }: Omit<HeadingProps, 'as'>) => (
-  <Heading as='h2' variant={variant || 'h2'}>
+export const H2 = ({ children, variant, ...restProps }: Omit<HeadingProps, 'as'>) => (
+  <Heading as='h2' variant={variant || 'h2'} {...restProps}>
     {children}
   </Heading>
 );
