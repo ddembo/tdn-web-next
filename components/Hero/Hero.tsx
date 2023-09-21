@@ -28,8 +28,8 @@ const HeroInner = ({ expanded, heading, subtitle, feature }: HeroInnerProps) => 
     >
       <div
         className={twMerge(
-          'grow-0 w-full',
-          feature ? 'max-w-[296px]' : 'max-w-full', // Full width content area if no feature
+          'grow-0 w-full text-center lg:text-left',
+          feature ? 'max-w-xs' : 'max-w-full', // Full width content area if no feature
         )}
       >
         <H1 className={feature ? 'lg:max-w-full' : 'lg:max-w-lg'}>{heading}</H1>
@@ -57,7 +57,7 @@ const HeroInner = ({ expanded, heading, subtitle, feature }: HeroInnerProps) => 
 const Hero = ({ contained, ...heroProps }: HeroWrapperProps & HeroInnerProps) => {
   if (contained) {
     return (
-      <Container>
+      <Container slim>
         <HeroInner {...heroProps} />
       </Container>
     );

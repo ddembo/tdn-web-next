@@ -28,12 +28,12 @@ const Heading = ({
   className: mergeClasses,
 }: HeadingProps) => {
   const Element = as || 'h2';
-  const baseStyles = 'font-heading mb-5 tracking-wide leading-none lg:max-w-[66%] lg:leading-tight';
+  const baseStyles = 'font-heading mb-5 tracking-wide leading-none lg:max-w-lg lg:leading-tight';
   const variantStyles: { [k in HeadingVariant]?: string } = {
-    h1: 'font-normal text-4xl lg:text-5xl uppercase lg:max-w-[75%]',
+    h1: 'font-normal text-4xl uppercase lg:text-5xl lg:max-w-sm',
     h2: 'font-normal mb-2 text-3xl lg:mb-3 lg:text-4xl',
     h3: 'font-light mb-2 text-xl lg:mb-3 lg:text-2xl',
-    h4: 'font-normal mb-1 text-sm lg:mb-2 lg:text-base uppercase',
+    h4: 'font-normal mb-1 text-sm uppercase lg:mb-2 lg:text-base',
   };
   const className = twMerge(baseStyles, variantStyles[variant], mergeClasses);
   return <Element className={className}>{children}</Element>;

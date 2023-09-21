@@ -1,6 +1,4 @@
-import Image from 'next/image';
 import ButtonLink from '../ButtonLink/ButtonLink';
-import Section from '../Section/Section';
 import InstagramLogo from '../icons/InstagramLogo';
 import TikTokLogo from '../icons/TikTokLogo';
 
@@ -10,8 +8,8 @@ const listItemStyles = "inline text-tdn-highlight before:content-['·'] before:m
 
 export default function SiteFooter() {
   return (
-    <footer className="justify-self-end w-full pt-4 mt-4 text-tdn-highlight text-xs text-center bg-tdn-primary">
-      <Section as="div">
+    <footer className="justify-self-end w-full py-4 text-tdn-highlight text-xs text-center bg-tdn-primary">
+      <div className='mx-auto lg:max-w-[978px]'>
         <nav className="w-full">
           <ul className={listStyles}>
             <li className={listItemStyles}>
@@ -57,7 +55,7 @@ export default function SiteFooter() {
           </li>
         </ul>
         <small className="w-full font-extralight">&copy; 2023 The Dreamy Nails</small>
-      </Section>
+      </div>
     </footer>
   );
 }

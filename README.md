@@ -7,9 +7,7 @@ While currently under development, this is a professional website for a real bus
 Current design is MVP; logo and colour palette were pre-existing, and things like spacing and fonts can be greatly improved. The client has asked for my help refreshing all branding with their input after the initial launch (getting deployed and indexed by search engines is priority).
 
 ## Roadmap (roughly prioritised)
-* add about page
-* heading style - use em for max-w
-* add container classes instead of w-[1024px] etc
+* fix gap when nav menu is open & below hero
 * update homepage content
 * Integrate Instagram API for showing recent work
 * SEO optimisations

@@ -1,9 +1,7 @@
 import type { Metadata } from 'next/types';
 
 import Section from '@/components/Section/Section';
-import Heading, { H1, H2, H3, H4 } from '@/components/Heading/Heading';
-import ButtonLink from '@/components/ButtonLink/ButtonLink';
-import Container from '@/components/Container/Container';
+import Heading, { H2, H3, H4 } from '@/components/Heading/Heading';
 import Hero from '@/components/Hero/Hero';
 
 export const metadata: Metadata = {
