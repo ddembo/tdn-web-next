@@ -8,6 +8,8 @@ Current design is MVP; logo and colour palette were pre-existing, and things lik
 
 ## Roadmap (roughly prioritised)
 * add about page
+* heading style - use em for max-w
+* add container classes instead of w-[1024px] etc
 * update homepage content
 * Integrate Instagram API for showing recent work
 * SEO optimisations

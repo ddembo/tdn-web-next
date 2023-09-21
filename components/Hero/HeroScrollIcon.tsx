@@ -5,7 +5,7 @@ const HeroScrollIcon = () => (
     viewBox='0 0 16 6'
     xmlns='http://www.w3.org/2000/svg'
     fill='currentColor'
-    className="hidden overflow-hidden absolute bottom-4 left-[calc(50%_-_2rem)] w-16 h-auto mt-[-2.25rem] translate-y-0 animate-float text-tdn-secondary lg:inline-block"
+    className="hidden overflow-hidden absolute bottom-4 left-[calc(50%_-_2rem)] w-16 h-auto mt-[-2.25rem] translate-y-0 animate-float lg:inline-block"
   >
     <path
       fillRule='evenodd'

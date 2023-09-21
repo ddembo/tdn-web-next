@@ -32,15 +32,15 @@ const config: Config = {
       keyframes: {
         float: {
           '0%,33%': {
-            filter: 'drop-shadow(0 0px 0px rgba(0, 0, 0, 0))',
+            filter: 'drop-shadow(0 0px 0px rgba(102, 123, 193, 0))',
             transform: 'translatey(0)',
           },
           '66%': {
-            filter: 'drop-shadow(0 8px 4px rgba(0, 0, 0, 0.6))',
+            filter: 'drop-shadow(0 8px 4px rgba(102, 123, 193, 1))',
             transform: 'translatey(-0.8rem)',
           },
           '100%': {
-            filter: 'drop-shadow(0 0px 0px rgba(0, 0, 0, 0))',
+            filter: 'drop-shadow(0 0px 0px rgba(102, 123, 193, 0))',
             transform: 'translatey(0)',
           },
         }

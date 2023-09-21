@@ -2,17 +2,23 @@ import type { ReactElement } from 'react';
 import React from 'react';
 import { twMerge } from 'tailwind-merge';
 
-import HeroScrollIcon from './HeroScrollIcon';
-import { H1 } from '../Heading/Heading';
+import { H1 } from '@/components/Heading/Heading';
+import Container from '@/components/Container/Container';
 
-interface HeroProps {
+import HeroScrollIcon from './HeroScrollIcon';
+
+interface HeroInnerProps {
   expanded?: boolean;
   heading: ReactElement;
   subtitle?: string;
   feature?: ReactElement;
 }
 
-const Hero = ({ expanded, heading, subtitle, feature }: HeroProps) => {
+interface HeroWrapperProps {
+  contained?: boolean;
+}
+
+const HeroInner = ({ expanded, heading, subtitle, feature }: HeroInnerProps) => {
   return (
     <header
       className={twMerge(
@@ -22,15 +28,11 @@ const Hero = ({ expanded, heading, subtitle, feature }: HeroProps) => {
     >
       <div
         className={twMerge(
-          'grow-0 text-tdn-primary w-full',
+          'grow-0 w-full',
           feature ? 'max-w-[296px]' : 'max-w-full', // Full width content area if no feature
         )}
       >
-        <H1
-          className={feature ? 'lg:max-w-full' : 'lg:max-w-[66%]'} // 2/3 width title if no feature
-        >
-          {heading}
-        </H1>
+        <H1 className={feature ? 'lg:max-w-full' : 'lg:max-w-lg'}>{heading}</H1>
         {subtitle && (
           <p
             className="pt-6 font-heading tracking-wide text-2xl font-normal text-center lg:text-left"
@@ -50,6 +52,18 @@ const Hero = ({ expanded, heading, subtitle, feature }: HeroProps) => {
       {expanded && <HeroScrollIcon />}
     </header>
   );
+};
+
+const Hero = ({ contained, ...heroProps }: HeroWrapperProps & HeroInnerProps) => {
+  if (contained) {
+    return (
+      <Container>
+        <HeroInner {...heroProps} />
+      </Container>
+    );
+  }
+
+  return <HeroInner {...heroProps} />;
 };
 
 export default Hero;
