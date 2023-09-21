@@ -9,6 +9,7 @@ import HeroScrollIcon from './HeroScrollIcon';
 
 interface HeroInnerProps {
   expanded?: boolean;
+  flipped?: boolean;
   heading: ReactElement;
   subtitle?: string;
   feature?: ReactElement;
@@ -18,7 +19,7 @@ interface HeroWrapperProps {
   contained?: boolean;
 }
 
-const HeroInner = ({ expanded, heading, subtitle, feature }: HeroInnerProps) => {
+const HeroInner = ({ expanded, flipped, heading, subtitle, feature }: HeroInnerProps) => {
   return (
     <header
       className={twMerge(
@@ -30,6 +31,7 @@ const HeroInner = ({ expanded, heading, subtitle, feature }: HeroInnerProps) => 
         className={twMerge(
           'grow-0 w-full text-center lg:text-left',
           feature ? 'max-w-xs' : 'max-w-full', // Full width content area if no feature
+          feature && flipped && 'lg:order-last' // Put content after feature if flag true
         )}
       >
         <H1 className={feature ? 'lg:max-w-full' : 'lg:max-w-lg'}>{heading}</H1>

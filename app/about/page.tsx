@@ -1,12 +1,16 @@
 import type { Metadata } from 'next/types';
+import Image from 'next/image';
 
 import Section from '@/components/Section/Section';
 import { H2 } from '@/components/Heading/Heading';
 import Hero from '@/components/Hero/Hero';
 
+import imgSelina from '@/public/selina-about-me.png';
+
 export const metadata: Metadata = {
-  title: 'The Dreamy Nails | Service menu',
-  description: 'Get an idea of my current nail services, and how much your appointment will cost.',
+  title: 'The Dreamy Nails | About me',
+  description:
+    "It's nice to meet you! Let me tell you a little about myself and my private home salon.",
 };
 
 export default function AboutMe() {
@@ -14,10 +18,16 @@ export default function AboutMe() {
     <div className="grow">
       <Hero
         contained
+        flipped
         // FIXME: fix types for heading prop so I don't need a Fragment
         heading={<>About me</>}
         subtitle="Hello and welcome to The Dreamy Nails: my little oasis away from the stresses of life! I'm Selina 🤗"
-        feature={<p>Pic goes here</p>}
+        feature={
+          <Image
+            src={imgSelina}
+            alt="Photo of Selina, from The Dreamy Nails in Erskineville, with beautiful hand-painted nail art"
+          />
+        }
       />
       <Section>
         <Section.Column>
@@ -61,7 +71,8 @@ export default function AboutMe() {
           <H2 variant="h3">An island of calm</H2>
           <p>
             As an introvert with anxiety I would dread every time I needed to get my nails done at a
-            busy, noisy shopping mall. Get pampered in my private home salon, away from the chaos.
+            busy, noisy shopping mall. Get pampered in my private, clean and professionally-equipped
+            home salon — away from all the chaos.
           </p>
           <H2 variant="h3">Personalised creativity</H2>
           <p>

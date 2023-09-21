@@ -14,6 +14,7 @@ Current design is MVP; logo and colour palette were pre-existing, and things lik
 * ---- soft release and deploy ----
 * add faq page
 * extract more components (List&List.Item? Text?)
+* figure out better responsive image handling
 * integrate booking system
 * v2 design & branding updates
   * styling for desktop breakpoint (1200px)
