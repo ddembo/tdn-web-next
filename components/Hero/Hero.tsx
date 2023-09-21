@@ -24,7 +24,7 @@ const HeroInner = ({ expanded, flipped, heading, subtitle, feature }: HeroInnerP
     <header
       className={twMerge(
         'flex flex-col items-center justify-between gap-4 mx-auto px-8 py-8 lg:flex-row lg:w-[978px] lg:px-4 lg:py-16',
-        expanded && 'lg:mt-[-59px] lg:h-screen',
+        expanded && 'lg:mt-[-56px] lg:h-screen',
       )}
     >
       <div

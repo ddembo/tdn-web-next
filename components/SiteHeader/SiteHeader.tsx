@@ -27,7 +27,7 @@ export default function SiteHeader() {
       <SiteHeaderToggle isExpanded={isExpanded} onClick={() => setExpanded((prev) => !prev)} />
       <div
         className={twMerge(
-          'fixed top-[59px] right-[-100%] w-full min-h-[calc(100vh_-_59px)] flex flex-col pt-4 bg-tdn-highlight-pale transition-all duration-200',
+          'fixed top-[56px] right-[-100%] w-full min-h-[calc(100vh_-_56px)] flex flex-col pt-4 bg-tdn-highlight-pale transition-all duration-200',
           isExpanded && 'right-0',
         )}
       >
