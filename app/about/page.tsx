@@ -26,6 +26,8 @@ export default function AboutMe() {
           <Image
             src={imgSelina}
             alt="Photo of Selina, from The Dreamy Nails in Erskineville, with beautiful hand-painted nail art"
+            priority
+            quality={100}
           />
         }
       />
