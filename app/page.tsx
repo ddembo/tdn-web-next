@@ -65,7 +65,7 @@ export default function Home() {
           <Section.Column>
             <ul className="self-center flex flex-col items-stretch w-full p-0 my-0 list-none">
               <li className="block py-2">
-                <ButtonLink href="/prices">Service menu</ButtonLink>
+                <ButtonLink href="/services">Service menu</ButtonLink>
               </li>
               {/* <li className="block py-2">
                 <ButtonLink href="/faq">Booking FAQ</ButtonLink>
