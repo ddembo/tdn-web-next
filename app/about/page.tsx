@@ -28,6 +28,7 @@ export default function AboutMe() {
             alt="Photo of Selina, from The Dreamy Nails in Erskineville, with beautiful hand-painted nail art"
             priority
             quality={100}
+            placeholder="blur"
           />
         }
       />

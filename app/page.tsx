@@ -8,9 +8,10 @@ import Hero from '@/components/Hero/Hero';
 
 import tdnLogoHero from '@/public/tdn-logo-hero.png';
 import tdnHeroSamples from '@/public/tdn-hero-samples.png';
+import ButtonLink from '@/components/ButtonLink/ButtonLink';
 
 export const metadata: Metadata = {
-  title: 'The Dreamy Nails | Home',
+  title: 'The Dreamy Nails | Sydney nail artist (Erskineville)',
 };
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
         feature={
           <Image
             src={tdnHeroSamples}
-            alt="Photos of beautiful hand-painted nail art designs by The Dreamy Nails"
+            alt="Photos of beautiful hand-painted nail art designs by Selina from The Dreamy Nails in Erskineville"
             priority
             quality={100}
             placeholder="blur"
@@ -36,9 +37,14 @@ export default function Home() {
           <Section.Column>
             <H2 variant="h1">About The Dreamy Nails</H2>
             <p>
-              Conveniently-located in Erskineville, in Sydney&apos;s Inner West, we transform your
-              nails into works of art!
+              Hello! I&apos;m Selina, a nail technician working from my private and comfortable home
+              studio, turning nails into art. I&apos;m conveniently-located in Erskineville, between
+              Newtown and Alexandria, close to public transport.
             </p>
+            <p>
+              Are you curious about what kind of person I am and how I got started with nail art?
+            </p>
+            <div><ButtonLink href="/about" variant="subtle">Read more</ButtonLink></div>
           </Section.Column>
           <Section.Column>
             <div className="image-placeholder" />

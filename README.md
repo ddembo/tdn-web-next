@@ -7,9 +7,7 @@ While currently under development, this is a professional website for a real bus
 Current design is MVP; logo and colour palette were pre-existing, and things like spacing and fonts can be greatly improved. The client has asked for my help refreshing all branding with their input after the initial launch (getting deployed and indexed by search engines is priority).
 
 ## Roadmap (roughly prioritised)
-* update homepage content
-* Integrate Instagram API for showing recent work
-* SEO optimisations
+* Integrate Instagram API for showing recent work (homepage, below 'about me' section)
 * ---- soft release and deploy ----
 * add faq page
 * extract more components (List&List.Item? Text?)
@@ -17,6 +15,7 @@ Current design is MVP; logo and colour palette were pre-existing, and things lik
 * integrate booking system
 * v2 design & branding updates
   * styling for desktop breakpoint (1200px)
+  * unit testing & storybook docs for new components
 * integrate shopify
 * ---- official site launch and promo ----
 * Implement end-to-end tests
@@ -37,6 +36,14 @@ npm run dev
 TODO
 
 ## Discussion & decisions made
+
+### Testing
+
+I've temporarily decided to forego testing for two reasons:
+1. we want a web presence ASAP, and I'm rapidly prototyping and refactoring and iterating without working from designs. Maintaining tests in this bootstrapping phase would be very inefficient and only delay the soft launch.
+2. A redesign is on the horizon, meaning even more major component changes.
+
+When I start the v2 build, I'll be creating designs before I start building, and have the time needed to test as I build.
 
 ### Branching strategy
 
