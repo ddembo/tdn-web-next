@@ -5,10 +5,11 @@ import Section from '@/components/Section/Section';
 import { H2 } from '@/components/Heading/Heading';
 import Container from '@/components/Container/Container';
 import Hero from '@/components/Hero/Hero';
+import ButtonLink from '@/components/ButtonLink/ButtonLink';
+import SiteInstagramGallery from '@/components/SiteInstagramGallery/SiteInstagramGallery';
 
 import tdnLogoHero from '@/public/tdn-logo-hero.png';
 import tdnHeroSamples from '@/public/tdn-hero-samples.png';
-import ButtonLink from '@/components/ButtonLink/ButtonLink';
 
 export const metadata: Metadata = {
   title: 'The Dreamy Nails | Sydney nail artist (Erskineville)',
@@ -44,13 +45,23 @@ export default function Home() {
             <p>
               Are you curious about what kind of person I am and how I got started with nail art?
             </p>
-            <div><ButtonLink href="/about" variant="subtle">Read more</ButtonLink></div>
+            <div>
+              <ButtonLink href="/about" variant="subtle">
+                Read more
+              </ButtonLink>
+            </div>
           </Section.Column>
           <Section.Column>
             <div className="image-placeholder" />
           </Section.Column>
         </Section>
       </Container>
+      <Section>
+        <Section.Column>
+          <H2>My latest nail art</H2>
+          <SiteInstagramGallery />
+        </Section.Column>
+      </Section>
     </div>
   );
 }
