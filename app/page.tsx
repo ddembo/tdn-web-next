@@ -28,6 +28,7 @@ export default function Home() {
             src={tdnLogoHero}
             alt="Logo for The Dreamy Nails Sydney nail salon, providing BIAB, nail art, manicures and press-on nails services"
             quality={100}
+            className="mx-auto lg:mx-0"
           />
         }
         subtitle="I'm creating beautiful hand-painted nail designs from my private home salon in Erskineville. My services include BIAB, GELX, e-file manicure, press-on nails, and more."
@@ -67,6 +68,7 @@ export default function Home() {
               alt="Pastel princess-themed hand painted nail designs by The Dreamy Nails in Sydney"
               width={350}
               height={350}
+              className="mx-auto"
             />
           </Section.Column>
         </Section>

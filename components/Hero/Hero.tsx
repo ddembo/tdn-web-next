@@ -29,12 +29,12 @@ const HeroInner = ({ expanded, flipped, heading, subtitle, feature }: HeroInnerP
     >
       <div
         className={twMerge(
-          'grow-0 w-full text-center lg:text-left',
+          'grow-0 w-full text-center md:text-left',
           feature ? 'max-w-xs' : 'max-w-full', // Full width content area if no feature
           feature && flipped && 'lg:order-last' // Put content after feature if flag true
         )}
       >
-        <H1 className={feature ? 'lg:max-w-full' : 'lg:max-w-lg'}>{heading}</H1>
+        <H1 className={feature ? 'md:max-w-full md:text-center' : 'md:max-w-lg'}>{heading}</H1>
         {subtitle && (
           <p
             className="pt-6 font-heading tracking-wide text-2xl font-normal text-center lg:text-left"
