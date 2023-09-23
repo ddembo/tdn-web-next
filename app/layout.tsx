@@ -7,6 +7,8 @@ import SiteFooter from '@/components/SiteFooter/SiteFooter';
 
 import './globals.css';
 
+export const runtime = 'edge'; // Applies to all pages
+
 const fontJost = Jost({ subsets: ['latin'], display: 'swap' });
 const fontDMSans = DM_Sans({ style: ['normal', 'italic'], subsets: ['latin'], display: 'swap' });
 
