@@ -12,6 +12,7 @@ Current design is MVP; logo and colour palette were pre-existing, and things lik
 * extract more components (List&List.Item? Text?)
 * figure out better responsive image handling
 * integrate booking system
+* error boundaries
 * v2 design & branding updates
   * styling for desktop breakpoint (1200px)
   * unit testing & storybook docs for new components
@@ -52,3 +53,10 @@ Will be using gitflow when this is ready for deployment; until then, I'm committ
 ### Framework
 
 TODO: talk about originally using Remix 
+
+### Environment variables
+
+As far as I can tell from docs, the env vars in `/env.local` are used by NextJS both for your local dev server, AND by Vercel when deploying, if so desired. However, since this is a public repo, I don't want API tokens exposed, so can't commit `.env` files for different environments. I'll be using Vercel's built-in platform features.
+
+If forking this site and deploying elsewhere, you'll need to provide your own values (e.g. sign up for your own Instagram API token, Google Analytics account, etc) and figure out how to make them available in production.
+
