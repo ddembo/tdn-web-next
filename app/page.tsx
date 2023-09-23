@@ -10,10 +10,12 @@ import SiteInstagramGallery from '@/components/SiteInstagramGallery/SiteInstagra
 
 import tdnLogoHero from '@/public/tdn-logo-hero.png';
 import tdnHeroSamples from '@/public/tdn-hero-samples.png';
+import tdnFeatureImg from '@/public/pastel-princess-nail-design.jpg';
 
 export const metadata: Metadata = {
   title: 'The Dreamy Nails Sydney | BIAB, nail art, manicures and press-on nails',
-  description: "I'm a nail artist creating beautiful hand-painted nail designs from my private home salon in Erskineville",
+  description:
+    "I'm a nail artist creating beautiful hand-painted nail designs from my private home salon in Erskineville",
 };
 
 export default function Home() {
@@ -42,15 +44,17 @@ export default function Home() {
 
       <Container>
         <Section>
-          <Section.Column>
+          <Section.Column doubleWidth>
             <H2 variant="h1">Welcome to The Dreamy Nails</H2>
             <p>
               Hello! I&apos;m Selina, a nail artist working from my private and comfortable home
-              studio. I love turning ordinary nails into works of art! I&apos;m conveniently-located
-              in Erskineville, Sydney — close to public transport, and walking distance from Newtown
-              and Redfern.
+              studio. I love turning ordinary nails into works of art!
             </p>
-            <p>Are you curious about me and my journey with nail art?</p>
+            <p>
+              I&apos;m conveniently-located in Erskineville, Sydney — close to public transport, and
+              walking distance from Newtown and Redfern.
+            </p>
+            <p>Do you want to know more about my salon and my journey with nail art?</p>
             <div>
               <ButtonLink href="/about" variant="subtle">
                 Read more
@@ -58,7 +62,12 @@ export default function Home() {
             </div>
           </Section.Column>
           <Section.Column>
-            <div className="image-placeholder" />
+            <Image
+              src={tdnFeatureImg}
+              alt="Pastel princess-themed hand painted nail designs by The Dreamy Nails in Sydney"
+              width={350}
+              height={350}
+            />
           </Section.Column>
         </Section>
       </Container>

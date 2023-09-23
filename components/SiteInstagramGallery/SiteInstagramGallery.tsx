@@ -42,7 +42,7 @@ export default async function SiteInstagramGallery() {
           );
         })}
       <div className="aspect-square flex justify-center items-center md:aspect-auto md:col-span-3 md:my-8">
-        <ButtonLink href="https://instagram.com/thedreamynails">View more</ButtonLink>
+        <ButtonLink href="https://instagram.com/thedreamynails">See more</ButtonLink>
       </div>
     </div>
   );

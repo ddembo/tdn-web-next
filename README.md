@@ -7,8 +7,6 @@ I'm developing this site for free as a favour, and in exchange, the business own
 Current design is MVP; logo and colour palette were pre-existing, and things like spacing and fonts can be greatly improved. The client has asked for my help refreshing all branding with their input after the initial launch (getting deployed and indexed by search engines is priority).
 
 ## Roadmap (roughly prioritised)
-* Replace placeholder with nail photo
-* ---- soft release and deploy ----
 * add faq page
 * extract more components (List&List.Item? Text?)
 * figure out better responsive image handling
