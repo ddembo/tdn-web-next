@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { DM_Sans, Jost } from 'next/font/google';
 import { twMerge } from 'tailwind-merge';
 
+import SiteAnalyticsTag from '@/components/SiteAnalyticsTag/SiteAnalyticsTag';
 import SiteHeader from '@/components/SiteHeader/SiteHeader';
 import SiteFooter from '@/components/SiteFooter/SiteFooter';
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={twMerge(fontDMSans.className, fontJost.className)}>
+        <SiteAnalyticsTag />
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />
