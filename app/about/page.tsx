@@ -32,7 +32,7 @@ export default function AboutMe() {
           />
         }
       />
-      <Section>
+      <Section as='article'>
         <Section.Column>
           <p>
             I&apos;ve always been creative from a young age, but especially growing up in an Asian

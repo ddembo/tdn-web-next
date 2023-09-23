@@ -19,7 +19,7 @@ export default function ServiceMenu() {
     <div className="grow">
       {/* FIXME: fix types for heading prop so I don't need a Fragment */}
       <Hero heading={<>Service menu</>} />
-      <Section>
+      <Section as="article">
         <Section.Column>
           <H2>Base services</H2>
           <p className="text-sm italic">All services include cuticle oil and hand-cream</p>

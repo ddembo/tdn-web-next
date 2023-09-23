@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={twMerge(fontDMSans.className, fontJost.className)}>
         <SiteHeader />
-        {children}
+        <main>{children}</main>
         <SiteFooter />
       </body>
     </html>

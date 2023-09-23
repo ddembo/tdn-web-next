@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 interface SectionProps {
   children: ReactNode;
   /** Renders as section by default, but can be optionally overridden */
-  as?: Extract<keyof JSX.IntrinsicElements, 'div' | 'section'>;
+  as?: Extract<keyof JSX.IntrinsicElements, 'div' | 'section' | 'article'>;
   /** Reverse the visual order of child items on desktop breakpoints */
   reverseColumns?: boolean;
 }
