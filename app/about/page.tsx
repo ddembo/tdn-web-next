@@ -59,10 +59,12 @@ export default function AboutMe() {
           <p>
             These events made me realise that I needed to start living life for myself instead of
             doing what everyone expected of me, so I did the unspeakable, and started to pursue my
-            hobby of creating beautiful things that bring joy as a full time career.
+            hobby of creating beautiful things that bring joy as a full time career. And so, The
+            Dreamy Nails was born!
           </p>
           <p>
-            There were a few things that are important to me when starting out the dreamy nails:
+            When I thought about the kind of person that I am, and my core values, I knew I wanted
+            to do things a little differently to some other Sydney nail studios.
           </p>
           <H2 variant="h3">Creating a safe space</H2>
           <p>
@@ -74,10 +76,10 @@ export default function AboutMe() {
           <H2 variant="h3">An island of calm</H2>
           <p>
             As an introvert with anxiety I would dread every time I needed to get my nails done at a
-            busy, noisy shopping mall. Get pampered in my private, clean and professionally-equipped
-            home salon — away from all the chaos.
+            busy, noisy shopping mall. You can get pampered in my private, clean and
+            professionally-equipped home salon — away from all the chaos.
           </p>
-          <H2 variant="h3">Personalised creativity</H2>
+          <H2 variant="h3">Personalised nail designs</H2>
           <p>
             You&apos;re unique, and your nail art should celebrate that fact. I tailor every design
             based on things like your specific style, interests, inspo pics and skin tone, so that
