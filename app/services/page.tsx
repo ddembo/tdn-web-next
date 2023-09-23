@@ -22,7 +22,9 @@ export default function ServiceMenu() {
       <Section as="article">
         <Section.Column>
           <H2>Base services</H2>
-          <p className="text-sm italic">All services include cuticle oil and hand-cream</p>
+          <p className="text-sm italic">
+            The Dreamy Nails is a gel-only salon. All services finish with cuticle oil and a hand-cream massage.
+          </p>
           <table className="mr-auto w-full min-w-[66%] lg:w-[66%]">
             <tbody>
               <tr>
