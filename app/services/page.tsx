@@ -27,7 +27,7 @@ export default function ServiceMenu() {
             <tbody>
               <tr>
                 <td className="py-4">
-                  <H3 className="mb-0 lg:mb-0">Naked mani</H3>
+                  <H3 className="mb-0 lg:mb-0">Naked manicure</H3>
                   <p className="text-sm">
                     Includes signature cuticle care, buff & shape and a choice of clear top coat
                   </p>
@@ -35,6 +35,51 @@ export default function ServiceMenu() {
                 <td className="py-4 align-top pl-4 min-w-[115px] lg:min-w-[125px]">
                   <Heading as="p" variant="h3" className="lg:max-w-full">
                     $55
+                  </Heading>
+                </td>
+              </tr>
+
+              <tr>
+                <td className="pt-4">
+                  <H3 className="mb-0 lg:mb-0">Structured manicure (BIAB)</H3>
+                  <p className="text-sm">
+                    Includes signature cuticle care, nail prep, and application of a builder gel and
+                    gel colour over the natural nails
+                  </p>
+                </td>
+                <td className="pt-4 align-top pl-4">
+                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
+                    From $65
+                  </Heading>
+                </td>
+              </tr>
+              <tr>
+                <td className="pt-1">
+                  <H4>Infill (2 — 4 weeks)</H4>
+                </td>
+                <td className="pt-1 align-top pl-4">
+                  <Heading as="p" variant="h4" className="mb-0 lg:mb-0 lg:max-w-full">
+                    $65
+                  </Heading>
+                </td>
+              </tr>
+              <tr>
+                <td className="pt-1">
+                  <H4>Rebalance (5+ weeks)</H4>
+                </td>
+                <td className="pt-1 align-top pl-4">
+                  <Heading as="p" variant="h4" className="lg:max-w-full">
+                    $80
+                  </Heading>
+                </td>
+              </tr>
+              <tr>
+                <td className="pt-1">
+                  <H4>Xl — xxxl length</H4>
+                </td>
+                <td className="pt-1 align-top pl-4">
+                  <Heading as="p" variant="h4" className="lg:max-w-full">
+                    From +$15
                   </Heading>
                 </td>
               </tr>
