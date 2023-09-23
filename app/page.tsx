@@ -12,7 +12,8 @@ import tdnLogoHero from '@/public/tdn-logo-hero.png';
 import tdnHeroSamples from '@/public/tdn-hero-samples.png';
 
 export const metadata: Metadata = {
-  title: 'The Dreamy Nails | Sydney nail artist (Erskineville)',
+  title: 'The Dreamy Nails Sydney | BIAB, nail art, manicures and press-on nails',
+  description: "I'm a nail artist creating beautiful hand-painted nail designs from my private home salon in Erskineville",
 };
 
 export default function Home() {
@@ -20,12 +21,18 @@ export default function Home() {
     <div className="grow">
       <Hero
         expanded
-        heading={<Image src={tdnLogoHero} alt="Welcome to The Dreamy Nails" quality={100} />}
-        subtitle="BIAB & GELX manicures, nail art & press-ons in Sydney's Inner West"
+        heading={
+          <Image
+            src={tdnLogoHero}
+            alt="Logo for The Dreamy Nails Sydney nail salon, providing BIAB, nail art, manicures and press-on nails services"
+            quality={100}
+          />
+        }
+        subtitle="I'm creating beautiful hand-painted nail designs from my private home salon in Erskineville. My services include BIAB, GELX, e-file manicure, press-on nails, and more."
         feature={
           <Image
             src={tdnHeroSamples}
-            alt="Photos of beautiful hand-painted nail art designs by Selina from The Dreamy Nails in Erskineville"
+            alt="Photos of beautiful hand-painted nail designs by Selina from The Dreamy Nails nail salon, Sydney"
             priority
             quality={100}
             placeholder="blur"
@@ -36,15 +43,14 @@ export default function Home() {
       <Container>
         <Section>
           <Section.Column>
-            <H2 variant="h1">About The Dreamy Nails</H2>
+            <H2 variant="h1">Welcome to The Dreamy Nails</H2>
             <p>
-              Hello! I&apos;m Selina, a nail technician working from my private and comfortable home
-              studio, turning nails into art. I&apos;m conveniently-located in Erskineville, between
-              Newtown and Alexandria, close to public transport.
+              Hello! I&apos;m Selina, a nail artist working from my private and comfortable home
+              studio. I love turning ordinary nails into works of art! I&apos;m conveniently-located
+              in Erskineville, Sydney — close to public transport, and walking distance from Newtown
+              and Redfern.
             </p>
-            <p>
-              Are you curious about what kind of person I am and how I got started with nail art?
-            </p>
+            <p>Are you curious about me and my journey with nail art?</p>
             <div>
               <ButtonLink href="/about" variant="subtle">
                 Read more

@@ -11,8 +11,7 @@ const fontJost = Jost({ subsets: ['latin'], display: 'swap' });
 const fontDMSans = DM_Sans({ style: ['normal', 'italic'], subsets: ['latin'], display: 'swap' });
 
 export const metadata: Metadata = {
-  title: 'The Dreamy Nails',
-  description: 'Premium BIAB, GELX & Press-on nail artist in Erskineville, Sydney',
+  title: 'The Dreamy Nails Sydney | BIAB, nail art, manicures and press-on nails',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
