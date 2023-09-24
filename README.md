@@ -51,7 +51,7 @@ When I start the v2 build, I'll be creating designs before I start building, and
 
 ### Branching strategy
 
-Will be using gitflow when this is ready for deployment; until then, I'm committing directly to the main branch to speed up the bootstrapping phase.
+Now that the [website](https://www.thedreamynails.com) is live, I'll be using gitflow. Even though I'm the only dev currently, it is useful for documenting changes and being able to more easily revert changes if necessary. Also, Vercel creates preview branches automatically for pull requests 🥳
 
 ### Framework
 
