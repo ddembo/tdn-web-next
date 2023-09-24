@@ -11,6 +11,7 @@ Current design is MVP; logo and colour palette were pre-existing, and things lik
 ## Roadmap (roughly prioritised)
 * add opening hours / availability somewhere
 * figure out better responsive image handling to reduce payloads
+* headings - move responsive max width logic to wrapper elements, headings always full width 
 * add faq page
 * extract more components (List&List.Item? Text?)
 * integrate booking system
