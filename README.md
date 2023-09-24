@@ -1,5 +1,7 @@
 # The Dreamy Nails Website
 
+[https://thedreamynails.com](https://thedreamynails.com)
+
 Website for The Dreamy Nails, a client with a home studio for manicures and nail art.
 
 I'm developing this site for free as a favour, and in exchange, the business owner is allowing me to make the source code public.
@@ -7,10 +9,11 @@ I'm developing this site for free as a favour, and in exchange, the business own
 Current design is MVP; logo and colour palette were pre-existing, and things like spacing and fonts can be greatly improved. The client has asked for my help refreshing all branding with their input after the initial launch (getting deployed and indexed by search engines is priority).
 
 ## Roadmap (roughly prioritised)
-* ensure internal pageviews aren't being tracked
+* add opening hours / availability somewhere
+* figure out better responsive image handling to reduce payloads
+* headings - move responsive max width logic to wrapper elements, headings always full width 
 * add faq page
 * extract more components (List&List.Item? Text?)
-* figure out better responsive image handling
 * integrate booking system
 * error boundaries
 * v2 design & branding updates
@@ -35,6 +38,7 @@ npm run dev
 
 TODO
 Google Analytics
+Instagram basic display API
 
 ## Discussion & decisions made
 
@@ -48,7 +52,7 @@ When I start the v2 build, I'll be creating designs before I start building, and
 
 ### Branching strategy
 
-Will be using gitflow when this is ready for deployment; until then, I'm committing directly to the main branch to speed up the bootstrapping phase.
+Now that the [website](https://www.thedreamynails.com) is live, I'll be using gitflow. Even though I'm the only dev currently, it is useful for documenting changes and being able to more easily revert changes if necessary. Also, Vercel creates preview branches automatically for pull requests 🥳
 
 ### Framework
 
