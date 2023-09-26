@@ -39,6 +39,7 @@ npm run dev
 TODO
 Google Analytics
 Instagram basic display API
+Edge Functions (/app/api folder)
 
 ## Discussion & decisions made
 
