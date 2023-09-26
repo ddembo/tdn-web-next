@@ -1,5 +1,5 @@
 import Section from '@/components/Section/Section';
-import { H2 } from '@/components/Heading/Heading';
+import { H2, H3 } from '@/components/Heading/Heading';
 import ButtonLink from '@/components/ButtonLink/ButtonLink';
 import Link from 'next/link';
 
@@ -20,6 +20,8 @@ export default function SiteCTASection() {
             a DM telling me what you&apos;d like and your preferred date and time, and I&apos;ll get
             you booked in ASAP.
           </p>
+          <H3 variant='h4'>Opening hours: Mon - Sat, 9:00am - late (6pm last appointment)</H3>
+          <p>Appointments outside these hours are available by prior arrangement and will incur a small fee.</p>
         </Section.Column>
         <Section.Column>
           <ul className="self-center flex flex-col items-stretch w-full p-0 my-0 list-none">
