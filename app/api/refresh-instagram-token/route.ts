@@ -1,10 +1,12 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export const config = { runtime: 'edge', region: 'syd1' };
-// NOTE: scheduled with cron to run every days (see /vercel.json)
+export const runtime = 'edge'
+export const preferredRegion = 'syd1';
+export const dynamic = 'force-dynamic'; // no caching
+
+// NOTE: scheduled with cron to run every day (see /vercel.json)
 // TODO: increase this to every 59 days once verified working
-// No need to add caching to fetch as this will only be called on schedule or manually on-demand; both cases we don't want cached responses
 
 export async function GET(request: NextRequest) {
   const tokenUrl = `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${process.env.INSTAGRAM_TOKEN}`;
