@@ -10,6 +10,7 @@ export default function SiteHeaderToggle({ isExpanded, onClick }: SiteHeaderTogg
     <button
       className="flex items-center w-7 h-5 scale-[2] text-tdn-primary bg-none cursor-pointer"
       onClick={onClick}
+      aria-label='Toggle site navigation'
     >
       {isExpanded ? (
         <svg

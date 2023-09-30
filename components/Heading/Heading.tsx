@@ -28,9 +28,9 @@ const Heading = ({
   className: mergeClasses,
 }: HeadingProps) => {
   const Element = as || 'h2';
-  const baseStyles = 'font-heading mb-5 tracking-wide leading-none md:max-w-xl md:leading-tight';
+  const baseStyles = 'font-heading mb-5 tracking-wide leading-none md:leading-tight';
   const variantStyles: { [k in HeadingVariant]?: string } = {
-    h1: 'font-normal text-4xl uppercase md:text-5xl md:max-w-md lg:max-w-sm',
+    h1: 'font-normal text-4xl uppercase md:text-5xl',
     h2: 'font-normal mb-2 text-3xl md:mb-3 md:text-4xl',
     h3: 'font-light mb-2 text-xl md:mb-3 md:text-2xl',
     h4: 'font-normal mb-1 text-sm uppercase md:mb-2 md:text-base',

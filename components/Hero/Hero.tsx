@@ -23,18 +23,18 @@ const HeroInner = ({ expanded, flipped, heading, subtitle, feature }: HeroInnerP
   return (
     <header
       className={twMerge(
-        'flex flex-col items-center justify-between gap-4 mx-auto px-8 py-8 lg:flex-row lg:w-[978px] lg:px-4 lg:py-16',
+        'flex flex-col items-center justify-between gap-4 mx-auto px-8 py-4 lg:flex-row lg:w-[978px] lg:px-4 lg:py-16',
         expanded && 'lg:mt-[-56px] lg:h-screen',
       )}
     >
       <div
         className={twMerge(
-          'grow-0 w-full text-center md:text-left',
+          'grow-0 w-full text-center lg:text-left',
           feature ? 'max-w-xs' : 'max-w-full', // Full width content area if no feature
           feature && flipped && 'lg:order-last' // Put content after feature if flag true
         )}
       >
-        <H1 className={feature ? 'md:max-w-full md:text-center' : 'md:max-w-lg'}>{heading}</H1>
+        <H1>{heading}</H1>
         {subtitle && (
           <p
             className="pt-6 font-heading tracking-wide text-2xl font-normal text-center lg:text-left"

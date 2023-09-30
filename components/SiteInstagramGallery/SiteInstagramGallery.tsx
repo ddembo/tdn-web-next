@@ -3,15 +3,11 @@ import Link from 'next/link';
 import ButtonLink from '@/components/ButtonLink/ButtonLink';
 
 // TODO: figure out best-practice approach to typing this
+// NOTE: token refresh handled by scheduled Edge Function (see api/refresh-instagram-token)
 async function getPosts() {
-  const tokenUrl = `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${process.env.INSTAGRAM_TOKEN}`;
   const postsUrl = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink,thumbnail_url&access_token=${process.env.INSTAGRAM_TOKEN}`;
 
-  // Refresh the token so it doesn't expire, and fetch posts simultaneously.
-  const [postsData] = await Promise.all([
-    fetch(postsUrl, { next: { revalidate: 10800 } }).then((res) => res.json()), // Cache 3 hrs
-    fetch(tokenUrl, { next: { revalidate: 30 * 86400 } }).then((res) => res.json()), // Cache 30 days
-  ]);
+  const postsData = await (await fetch(postsUrl, { next: { revalidate: 10800 } })).json(); // Cache 3 hrs
 
   return postsData.data;
 }
