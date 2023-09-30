@@ -8,29 +8,47 @@ I'm developing this site for free as a favour, and in exchange, the business own
 
 Current design is MVP; logo and colour palette were pre-existing, and things like spacing and fonts can be greatly improved. The client has asked for my help refreshing all branding with their input after the initial launch (getting deployed and indexed by search engines is priority).
 
-## Roadmap (roughly prioritised)
-* figure out better responsive image handling to reduce payloads
+## Current priorities
+
+### Minor content tweaks and image improvements
+
+Adding a couple of content sections to improve SEO (e.g. what is BIAB) + cross-links. Manually converting current images to optimised AVIF files.
+
+### v2 design & branding refresh
+
+Currently in progress. Complete overhaul including new logo and typography refresh.
+
+<img src="docs/TDN-mobile-home-v2.webp" alt="TDN v2 - Mobile Homepage" width="200" />
+
+### Optimised image handling
+
+Currently researching best practices for serving optimised images.
+
+I've made the decision to use Cloudinary for image hosting and dynamic optimisation; being able to resize, remove backgrounds, etc while automatically serving the best format for the given user agent will give a huge boost to performance and cut down massively on manual image processing/exporting overhead.
+
+This will be implemented with v2 once designs are complete
+
+### Next steps (roughly prioritised, post-v2)
+* unit testing & storybook docs for new components
+  * Currently researching how to test server & client components
+* Add logging for edge fn's (https://vercel.com/docs/observability/runtime-logs)
 * headings - move responsive max width logic to wrapper elements, headings always full width 
 * add faq page
 * extract more components (List&List.Item? Text?)
 * integrate booking system
 * error boundaries
-* v2 design & branding updates
-  * styling for desktop breakpoint (1200px)
-  * unit testing & storybook docs for new components
+* extended desktop breakpoint (1200px)
 * integrate shopify
-* ---- official site launch and promo ----
 * Implement end-to-end tests
-* Start documenting components in storybook
-* add aria roles, perform accessibility checks
-* performance tuning
+* accessibility audit & optimisation
+* performance audit & optimisation
 
 ## Getting started
 
 For local development:
 
 ```
-npm run dev
+pnpm run dev
 ```
 
 ## Core Features
