@@ -12,7 +12,7 @@ Current design is MVP; logo and colour palette were pre-existing, and things lik
 
 ### Minor content tweaks and image improvements
 
-Adding a couple of content sections to improve SEO (e.g. what is BIAB) + cross-links. Manually converting current images to optimised AVIF files.
+Adding a couple of content sections to improve SEO (e.g. what is BIAB) + cross-links. Manually converting current images to optimised WEBP files (better browser compatibility than AVIF).
 
 ### v2 design & branding refresh
 
@@ -26,7 +26,7 @@ Currently researching best practices for serving optimised images.
 
 I've made the decision to use Cloudinary for image hosting and dynamic optimisation; being able to resize, remove backgrounds, etc while automatically serving the best format for the given user agent will give a huge boost to performance and cut down massively on manual image processing/exporting overhead.
 
-This will be implemented with v2 once designs are complete
+This will be implemented with v2 once designs are complete.
 
 ### Next steps (roughly prioritised, post-v2)
 * unit testing & storybook docs for new components
@@ -70,7 +70,7 @@ When I start the v2 build, I'll be creating designs before I start building, and
 
 ### Branching strategy
 
-Now that the [website](https://www.thedreamynails.com) is live, I'll be using gitflow. Even though I'm the only dev currently, it is useful for documenting changes and being able to more easily revert changes if necessary. Also, Vercel creates preview branches automatically for pull requests 🥳
+After launching the website, I initially followed the git-flow strategy, however I have decided to eliminate the develop branch (i.e. use `GitHub flow` instead). This will greatly reduce overhead without sacrificing ability to test/preview branches before merging.
 
 ### Framework
 

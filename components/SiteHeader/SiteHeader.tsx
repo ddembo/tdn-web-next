@@ -7,9 +7,9 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-import ButtonLink from '../ButtonLink/ButtonLink';
+import ButtonLink from '@/components/ButtonLink/ButtonLink';
+import SiteLogoMoonOnly from '@/components/icons/SiteLogoMoonOnly';
 import SiteHeaderToggle from './SiteHeaderToggle';
-import tdnLogoOnly from '@/public/tdn-logo-only.png';
 
 export default function SiteHeader() {
   const [isExpanded, setExpanded] = useState(false);
@@ -18,16 +18,12 @@ export default function SiteHeader() {
   return (
     <header className="z-50 sticky flex items-center justify-between bg-white top-0 w-full py-2 px-4 mx-auto">
       <Link href="/">
-        <Image
-          src={tdnLogoOnly}
-          alt="The Dreamy Nails Premium BIAB, GELX & Press-ons logo"
-          quality={100}
-        />
+        <SiteLogoMoonOnly />
       </Link>
       <SiteHeaderToggle isExpanded={isExpanded} onClick={() => setExpanded((prev) => !prev)} />
       <div
         className={twMerge(
-          'fixed top-[56px] right-[-100%] w-full min-h-[calc(100vh_-_56px)] flex flex-col pt-4 bg-tdn-highlight-pale transition-all duration-200',
+          'fixed top-[52px] right-[-100%] w-full min-h-[calc(100vh_-_52px)] flex flex-col pt-4 bg-tdn-highlight-pale transition-all duration-200',
           isExpanded && 'right-0',
         )}
       >
