@@ -5,7 +5,7 @@ import Section from '@/components/Section/Section';
 import { H2 } from '@/components/Heading/Heading';
 import Hero from '@/components/Hero/Hero';
 
-import imgSelina from '@/public/selina-about-me.png';
+import imgSelina from '@/public/selina-about-me.webp';
 
 export const metadata: Metadata = {
   title: 'The Dreamy Nails | About me',

@@ -7,10 +7,10 @@ import Container from '@/components/Container/Container';
 import Hero from '@/components/Hero/Hero';
 import ButtonLink from '@/components/ButtonLink/ButtonLink';
 import SiteInstagramGallery from '@/components/SiteInstagramGallery/SiteInstagramGallery';
+import SiteLogoFull from '@/components/icons/SiteLogoFull';
 
-import tdnLogoHero from '@/public/tdn-logo-hero.png';
-import tdnHeroSamples from '@/public/tdn-hero-samples.png';
-import tdnFeatureImg from '@/public/pastel-princess-nail-design.jpg';
+import tdnHeroSamples from '@/public/tdn-hero-samples.webp';
+import tdnFeatureImg from '@/public/pastel-princess-nail-design.webp';
 
 export const metadata: Metadata = {
   title: 'The Dreamy Nails Sydney | BIAB, nail art, manicures and press-on nails',
@@ -23,14 +23,7 @@ export default function Home() {
     <div className="grow">
       <Hero
         expanded
-        heading={
-          <Image
-            src={tdnLogoHero}
-            alt="Logo for The Dreamy Nails Sydney nail salon, providing BIAB, nail art, manicures and press-on nails services"
-            quality={100}
-            className="mx-auto lg:mx-0"
-          />
-        }
+        heading={<SiteLogoFull width={300} />}
         subtitle="I'm creating beautiful hand-painted nail designs from my private home salon in Erskineville. My services include BIAB, GELX, e-file manicure, press-on nails, and more."
         feature={
           <Image
