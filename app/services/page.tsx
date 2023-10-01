@@ -5,8 +5,8 @@ import Heading, { H2, H3, H4 } from '@/components/Heading/Heading';
 import Hero from '@/components/Hero/Hero';
 
 export const metadata: Metadata = {
-  title: 'The Dreamy Nails | Service menu',
-  description: 'Get an idea of my current nail services, and how much your appointment will cost.',
+  title: 'Service menu | The Dreamy Nails',
+  description: 'My individually-tailored services include BIAB manicures, bespoke nail art, soft gel extensions & more',
 };
 
 /** 
