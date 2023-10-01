@@ -8,9 +8,9 @@ import Hero from '@/components/Hero/Hero';
 import imgSelina from '@/public/selina-about-me.webp';
 
 export const metadata: Metadata = {
-  title: 'The Dreamy Nails | About me',
+  title: 'About The Dreamy Nails',
   description:
-    "It's nice to meet you! Let me tell you a little about myself and my private home salon.",
+    "About my home nail salon journey. Understand why creating a safe space to express yourself is so important to me",
 };
 
 export default function AboutMe() {
