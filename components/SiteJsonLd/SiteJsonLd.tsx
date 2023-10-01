@@ -18,6 +18,7 @@ const nailSalonJsonLD: NailSalon = {
     addressCountry: 'AU',
     postalCode: '2043',
   },
+  openingHours: "Mo-Sa 09:00-18:00",
 };
 
 /*
