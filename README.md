@@ -1,34 +1,24 @@
 # The Dreamy Nails Website
 
-[https://thedreamynails.com](https://thedreamynails.com)
+[https://www.thedreamynails.com](https://www.thedreamynails.com)
 
-Website for The Dreamy Nails, a client with a home studio for manicures and nail art.
+Website for The Dreamy Nails, a small business owner with a home studio for manicures and nail art.
 
-I'm developing this site for free as a favour, and in exchange, the business owner is allowing me to make the source code public.
-
-Current design is MVP; logo and colour palette were pre-existing, and things like spacing and fonts can be greatly improved. The client has asked for my help refreshing all branding with their input after the initial launch (getting deployed and indexed by search engines is priority).
+I know the owner and I'm developing this site for free as a favour, and in exchange, they are allowing me to make the source code public.
 
 ## Current priorities
 
-### Minor content tweaks and image improvements
+I've started using [GitHub Issues](/issues) to manage my backlog & current streams of work, currently migrating roadmap.
 
-Adding a couple of content sections to improve SEO (e.g. what is BIAB) + cross-links. Manually converting current images to optimised WEBP files (better browser compatibility than AVIF).
+Currently balancing efforts between:
+* performing [a full site redesign and branding overhaul](https://github.com/bootlegneurons/tdn-web-next/issues/11)
+* Tweaking content and optimising SEO to boost traffic and conversion (i.e. profit)
 
-### v2 design & branding refresh
+### Next steps (roughly prioritised, mostly post-v2)
 
-Currently in progress. Complete overhaul including new logo and typography refresh.
+Migrating this list to GitHub Issues is in progress.
 
-<img src="docs/TDN-mobile-home-v2.webp" alt="TDN v2 - Mobile Homepage" width="200" />
-
-### Optimised image handling
-
-Currently researching best practices for serving optimised images.
-
-I've made the decision to use Cloudinary for image hosting and dynamic optimisation; being able to resize, remove backgrounds, etc while automatically serving the best format for the given user agent will give a huge boost to performance and cut down massively on manual image processing/exporting overhead.
-
-This will be implemented with v2 once designs are complete.
-
-### Next steps (roughly prioritised, post-v2)
+* increase insta token refresh to 59 days.
 * unit testing & storybook docs for new components
   * Currently researching how to test server & client components
 * Add logging for edge fn's (https://vercel.com/docs/observability/runtime-logs)
