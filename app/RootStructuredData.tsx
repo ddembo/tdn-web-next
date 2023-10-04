@@ -12,8 +12,8 @@ const didResolveVars = INSTAGRAM_URL && TIKTOK_URL;
 
 // TODO: once this is stable and verified, clean this up with env vars.
 export const RootPageId = HOMEPAGE_URL;
-export const SiteNodeId = `${HOMEPAGE_URL}/#site`;
-export const OrganizationId = `${HOMEPAGE_URL}/#organization`;
+export const SiteNodeId = `${HOMEPAGE_URL}#site`;
+export const OrganizationId = `${HOMEPAGE_URL}#organization`;
 
 const commonSiteAndOrgData: Partial<WebSite> & Partial<NailSalon> = {
   name: 'The Dreamy Nails',
