@@ -7,15 +7,18 @@ import Hero from '@/components/Hero/Hero';
 
 import imgSelina from '@/public/selina-about-me.webp';
 
+import PageStructuredData from './PageStructuredData';
+
 export const metadata: Metadata = {
   title: 'About The Dreamy Nails',
   description:
-    "About my home nail salon journey. Understand why creating a safe space to express yourself is so important to me",
+    'About my home nail salon journey. Understand why creating a safe space to express yourself is so important to me',
 };
 
 export default function AboutMe() {
   return (
     <div className="grow">
+      <PageStructuredData />
       <Hero
         contained
         flipped
@@ -32,7 +35,7 @@ export default function AboutMe() {
           />
         }
       />
-      <Section as='article'>
+      <Section as="article">
         <Section.Column>
           <p>
             I&apos;ve always been creative from a young age, but especially growing up in an Asian
