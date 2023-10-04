@@ -53,7 +53,7 @@ const pageStructuredData: Graph = {
     {
       '@type': 'NailSalon',
       '@id': OrganizationId,
-      // TODO: logo: 'https://',
+      logo: `${HOMEPAGE_URL}logo.png`,
       ...commonSiteAndOrgData,
       location: {
         '@type': 'PostalAddress',
