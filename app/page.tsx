@@ -7,11 +7,12 @@ import Container from '@/components/Container/Container';
 import Hero from '@/components/Hero/Hero';
 import ButtonLink from '@/components/ButtonLink/ButtonLink';
 import SiteInstagramGallery from '@/components/SiteInstagramGallery/SiteInstagramGallery';
-import SiteJsonLd from '@/components/SiteJsonLd/SiteJsonLd';
 import SiteLogoFull from '@/components/icons/SiteLogoFull';
 
 import tdnHeroSamples from '@/public/tdn-hero-samples.webp';
 import tdnFeatureImg from '@/public/pastel-princess-nail-design.webp';
+
+import RootStructuredData from './RootStructuredData';
 
 export const metadata: Metadata = {
   title: 'Sydney BIAB nail art, manicures & press-ons by The Dreamy Nails',
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <SiteJsonLd />
+      <RootStructuredData />
       <div className="grow">
         <Hero
           expanded

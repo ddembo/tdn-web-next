@@ -3,6 +3,8 @@ import { H2, H3 } from '@/components/Heading/Heading';
 import ButtonLink from '@/components/ButtonLink/ButtonLink';
 import Link from 'next/link';
 
+const INSTAGRAM_URL = process.env.NEXT_PUBLIC_INSTAGRAM_URL || '/';
+
 export default function SiteCTASection() {
   return (
     <Section>
@@ -16,7 +18,7 @@ export default function SiteCTASection() {
           </p>
           <p>
             In the meantime, bookings can be made on{' '}
-            <Link href="https://instagram.com/thedreamynails">my Instagram profile</Link> - send me
+            <Link href={INSTAGRAM_URL}>my Instagram profile</Link> - send me
             a DM telling me what you&apos;d like and your preferred date and time, and I&apos;ll get
             you booked in ASAP.
           </p>
@@ -32,7 +34,7 @@ export default function SiteCTASection() {
                 <ButtonLink href="/faq">Booking FAQ</ButtonLink>
               </li> */}
             <li className="block py-2">
-              <ButtonLink href="https://instagram.com/thedreamynails" variant="cta">
+              <ButtonLink href={INSTAGRAM_URL} variant="cta">
                 Book now
               </ButtonLink>
             </li>

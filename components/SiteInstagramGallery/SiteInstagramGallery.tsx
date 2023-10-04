@@ -2,6 +2,8 @@ import Link from 'next/link';
 
 import ButtonLink from '@/components/ButtonLink/ButtonLink';
 
+const INSTAGRAM_URL = process.env.NEXT_PUBLIC_INSTAGRAM_URL || '/';
+
 // TODO: figure out best-practice approach to typing this
 // NOTE: token refresh handled by scheduled Edge Function (see api/refresh-instagram-token)
 async function getPosts() {
@@ -38,7 +40,7 @@ export default async function SiteInstagramGallery() {
           );
         })}
       <div className="aspect-square flex justify-center items-center md:aspect-auto md:col-span-3 md:my-8">
-        <ButtonLink href="https://instagram.com/thedreamynails">See more</ButtonLink>
+        <ButtonLink href={INSTAGRAM_URL}>See more</ButtonLink>
       </div>
     </div>
   );

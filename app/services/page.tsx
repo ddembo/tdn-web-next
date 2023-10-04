@@ -4,6 +4,8 @@ import Section from '@/components/Section/Section';
 import Heading, { H2, H3, H4 } from '@/components/Heading/Heading';
 import Hero from '@/components/Hero/Hero';
 
+import PageStructuredData from './PageStructuredData';
+
 export const metadata: Metadata = {
   title: 'Service menu | The Dreamy Nails',
   description: 'My individually-tailored services include BIAB manicures, bespoke nail art, soft gel extensions & more',
@@ -17,6 +19,7 @@ export const metadata: Metadata = {
 export default function ServiceMenu() {
   return (
     <div className="grow">
+      <PageStructuredData />
       {/* FIXME: fix types for heading prop so I don't need a Fragment */}
       <Hero heading={<>Service menu</>} />
       <Section as="article">
