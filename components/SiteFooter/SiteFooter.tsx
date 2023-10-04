@@ -3,6 +3,9 @@ import SiteCTASection from '@/components/SiteCTASection/SiteCTASection';
 import InstagramLogo from '@/components/icons/InstagramLogo';
 import TikTokLogo from '@/components/icons/TikTokLogo';
 
+const INSTAGRAM_URL = process.env.NEXT_PUBLIC_INSTAGRAM_URL || '/';
+const TIKTOK_URL = process.env.NEXT_PUBLIC_TIKTOK_URL || '/';
+
 // consider a List component
 const listStyles = 'inline-block p-0 m-0 pb-4 w-full list-none';
 const listItemStyles =
@@ -35,13 +38,12 @@ export default function SiteFooter() {
           </nav>
           <ul className={listStyles}>
             <li className={listItemStyles}>
-              <ButtonLink inline href="https://instagram.com/thedreamynails" variant="subtle">
-                {/* TODO: need to refactor svg's into components so i can change the color. u_u */}
+              <ButtonLink inline href={INSTAGRAM_URL} variant="subtle">
                 <InstagramLogo />
               </ButtonLink>
             </li>
             <li className={listItemStyles}>
-              <ButtonLink inline href="https://www.tiktok.com/@thedreamynails" variant="subtle">
+              <ButtonLink inline href={TIKTOK_URL} variant="subtle">
                 <TikTokLogo />
               </ButtonLink>
             </li>
