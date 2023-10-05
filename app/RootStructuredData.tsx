@@ -1,4 +1,12 @@
-import type { WebSite, NailSalon, WebPage, Graph, BreadcrumbList } from 'schema-dts';
+import type {
+  WebSite,
+  NailSalon,
+  WebPage,
+  Graph,
+  BreadcrumbList,
+  PostalAddress,
+  OpeningHoursSpecification,
+} from 'schema-dts';
 
 const INSTAGRAM_URL = process.env.NEXT_PUBLIC_INSTAGRAM_URL;
 const TIKTOK_URL = process.env.NEXT_PUBLIC_TIKTOK_URL;
@@ -62,8 +70,13 @@ const pageStructuredData: Graph = {
         addressRegion: 'NSW',
         addressCountry: 'AU',
         postalCode: '2043',
-      },
-      openingHours: 'Mo-Sa 09:00-18:00',
+      } as PostalAddress,
+      openingHoursSpecification: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        opens: '09:00',
+        closes: '18:00',
+      } as OpeningHoursSpecification,
     } as NailSalon,
   ],
 };
