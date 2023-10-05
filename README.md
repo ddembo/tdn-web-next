@@ -18,7 +18,6 @@ Currently balancing efforts between:
 
 Migrating this list to GitHub Issues is in progress.
 
-* increase insta token refresh to 59 days.
 * unit testing & storybook docs for new components
   * Currently researching how to test server & client components
 * headings - move responsive max width logic to wrapper elements, headings always full width

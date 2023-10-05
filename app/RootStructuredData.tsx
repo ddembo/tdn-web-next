@@ -14,6 +14,7 @@ const didResolveVars = INSTAGRAM_URL && TIKTOK_URL;
 export const RootPageId = HOMEPAGE_URL;
 export const SiteNodeId = `${HOMEPAGE_URL}#site`;
 export const OrganizationId = `${HOMEPAGE_URL}#organization`;
+const BreadcrumbId = `${HOMEPAGE_URL}#breadcrumb`;
 
 const commonSiteAndOrgData: Partial<WebSite> & Partial<NailSalon> = {
   name: 'The Dreamy Nails',
@@ -35,11 +36,11 @@ const pageStructuredData: Graph = {
       dateCreated: '2023-09-21T20:39:00+11:00',
       dateModified: '2023-10-04T20:50:00+11:00',
       provider: OrganizationId,
-      breadcrumb: `${RootPageId}#breadcrumb`,
+      breadcrumb: BreadcrumbId,
     } as WebPage,
     {
       '@type': 'BreadcrumbList',
-      '@id': HOMEPAGE_URL,
+      '@id': BreadcrumbId,
       itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: RootPageId }],
     } as BreadcrumbList,
     {

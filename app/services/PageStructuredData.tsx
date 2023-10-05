@@ -4,6 +4,7 @@ import { OrganizationId, RootPageId, SiteNodeId } from '@/app/RootStructuredData
 
 /* NOTE: this schema references objects defined in /app/RootStructuredData.tsx */
 const ThisPageId = 'https://www.thedreamynails.com/services/';
+const BreadcrumbId = `${ThisPageId}#breadcrumb`;
 
 const pageStructuredData: Graph = {
   '@context': 'https://schema.org',
@@ -15,10 +16,11 @@ const pageStructuredData: Graph = {
       dateCreated: '2023-09-21T20:39:00+11:00',
       dateModified: '2023-10-04T2:52:00+11:00',
       provider: OrganizationId,
-      breadcrumb: `${ThisPageId}#breadcrumb`,
+      breadcrumb: BreadcrumbId,
     } as WebPage,
     {
       '@type': 'BreadcrumbList',
+      '@id': BreadcrumbId,
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: RootPageId },
         { '@type': 'ListItem', position: 2, name: 'Service menu', item: ThisPageId },

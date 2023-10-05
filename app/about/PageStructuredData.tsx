@@ -19,6 +19,7 @@ const pageStructuredData: Graph = {
     } as WebPage,
     {
       '@type': 'BreadcrumbList',
+      '@id': `${ThisPageId}#breadcrumb`,
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: RootPageId },
         { '@type': 'ListItem', position: 2, name: 'About', item: ThisPageId },
