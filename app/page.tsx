@@ -15,9 +15,9 @@ import tdnFeatureImg from '@/public/pastel-princess-nail-design.webp';
 import RootStructuredData from './RootStructuredData';
 
 export const metadata: Metadata = {
-  title: 'Sydney BIAB nail art, manicures & press-ons by The Dreamy Nails',
+  title: 'Sydney BIAB nail art, manicures & press-ons - The Dreamy Nails',
   description:
-    "I'm creating beautiful hand-painted nail art from my private home nail salon in Sydney",
+    "I'm creating unique hand-painted nail designs from my private home nail salon in Sydney",
 };
 
 export default function Home() {
@@ -28,11 +28,11 @@ export default function Home() {
         <Hero
           expanded
           heading={<SiteLogoFull width={300} />}
-          subtitle="I'm creating beautiful hand-painted nail designs from my private home salon in Erskineville. My services include BIAB, GELX, e-file manicure, press-on nails, and more."
+          subtitle="BIAB nail art, manicures & press-ons - creating unique hand-painted nail designs from my private home nail salon in Sydney."
           feature={
             <Image
               src={tdnHeroSamples}
-              alt="Photos of beautiful hand-painted nail designs by Selina from The Dreamy Nails nail salon, Sydney"
+              alt="Photos of beautiful hand-painted nail designs by Selina from The Dreamy Nails salon in Sydney"
               priority
               quality={100}
               placeholder="blur"

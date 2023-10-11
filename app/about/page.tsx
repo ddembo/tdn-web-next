@@ -10,7 +10,7 @@ import imgSelina from '@/public/selina-about-me.webp';
 import PageStructuredData from './PageStructuredData';
 
 export const metadata: Metadata = {
-  title: 'About The Dreamy Nails',
+  title: 'About me - The Dreamy Nails',
   description:
     'About my home nail salon journey. Understand why creating a safe space to express yourself is so important to me',
 };
