@@ -1,4 +1,12 @@
-import type { WebSite, NailSalon, WebPage, Graph, BreadcrumbList } from 'schema-dts';
+import type {
+  WebSite,
+  NailSalon,
+  WebPage,
+  Graph,
+  BreadcrumbList,
+  PostalAddress,
+  OpeningHoursSpecification,
+} from 'schema-dts';
 
 const INSTAGRAM_URL = process.env.NEXT_PUBLIC_INSTAGRAM_URL;
 const TIKTOK_URL = process.env.NEXT_PUBLIC_TIKTOK_URL;
@@ -14,6 +22,7 @@ const didResolveVars = INSTAGRAM_URL && TIKTOK_URL;
 export const RootPageId = HOMEPAGE_URL;
 export const SiteNodeId = `${HOMEPAGE_URL}#site`;
 export const OrganizationId = `${HOMEPAGE_URL}#organization`;
+const BreadcrumbId = `${HOMEPAGE_URL}#breadcrumb`;
 
 const commonSiteAndOrgData: Partial<WebSite> & Partial<NailSalon> = {
   name: 'The Dreamy Nails',
@@ -29,17 +38,17 @@ const pageStructuredData: Graph = {
     {
       '@type': 'WebPage',
       '@id': RootPageId,
-      isPartOf: SiteNodeId,
+      isPartOf: { "@id": SiteNodeId },
       // NOTE: created issue #13 to improve datetime handling here
       // COULD potentially use a vscode keybinding or snippet too https://stackoverflow.com/questions/38780057/how-to-insert-current-date-time-in-vscode
       dateCreated: '2023-09-21T20:39:00+11:00',
-      dateModified: '2023-10-04T20:50:00+11:00',
-      provider: OrganizationId,
-      breadcrumb: `${RootPageId}#breadcrumb`,
+      dateModified: '2023-10-12T08:39:00+11:00',
+      provider: { '@id': OrganizationId },
+      breadcrumb: { '@id': BreadcrumbId },
     } as WebPage,
     {
       '@type': 'BreadcrumbList',
-      '@id': HOMEPAGE_URL,
+      '@id': BreadcrumbId,
       itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: RootPageId }],
     } as BreadcrumbList,
     {
@@ -47,8 +56,8 @@ const pageStructuredData: Graph = {
       '@id': SiteNodeId,
       ...commonSiteAndOrgData,
       dateCreated: '2023-09-21T20:39:00+11:00',
-      dateModified: '2023-10-04T20:50:00+11:00', // TODO: This should change every deployment
-      provider: OrganizationId,
+      dateModified: '2023-10-12T08:39:00+11:00', // TODO: This should change every deployment
+      provider: { '@id': OrganizationId },
     } as WebSite,
     {
       '@type': 'NailSalon',
@@ -61,8 +70,13 @@ const pageStructuredData: Graph = {
         addressRegion: 'NSW',
         addressCountry: 'AU',
         postalCode: '2043',
-      },
-      openingHours: 'Mo-Sa 09:00-18:00',
+      } as PostalAddress,
+      openingHoursSpecification: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        opens: '09:00',
+        closes: '18:00',
+      } as OpeningHoursSpecification,
     } as NailSalon,
   ],
 };

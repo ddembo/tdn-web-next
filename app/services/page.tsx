@@ -7,7 +7,7 @@ import Hero from '@/components/Hero/Hero';
 import PageStructuredData from './PageStructuredData';
 
 export const metadata: Metadata = {
-  title: 'Service menu | The Dreamy Nails',
+  title: 'Service menu - The Dreamy Nails',
   description: 'My individually-tailored services include BIAB manicures, bespoke nail art, soft gel extensions & more',
 };
 

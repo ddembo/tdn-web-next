@@ -18,10 +18,8 @@ Currently balancing efforts between:
 
 Migrating this list to GitHub Issues is in progress.
 
-* increase insta token refresh to 59 days.
 * unit testing & storybook docs for new components
   * Currently researching how to test server & client components
-* Add logging for edge fn's (https://vercel.com/docs/observability/runtime-logs)
 * headings - move responsive max width logic to wrapper elements, headings always full width
 * add faq page
 * extract more components (List&List.Item? Text?)
