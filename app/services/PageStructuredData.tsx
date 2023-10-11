@@ -12,11 +12,11 @@ const pageStructuredData: Graph = {
     {
       '@type': 'WebPage',
       '@id': ThisPageId,
-      isPartOf: SiteNodeId,
+      isPartOf: { '@id': SiteNodeId },
       dateCreated: '2023-09-21T20:39:00+11:00',
-      dateModified: '2023-10-04T2:52:00+11:00',
-      provider: OrganizationId,
-      breadcrumb: BreadcrumbId,
+      dateModified: '2023-10-12T08:39:00+11:00',
+      provider: { '@id': OrganizationId },
+      breadcrumb: { '@id': BreadcrumbId },
     } as WebPage,
     {
       '@type': 'BreadcrumbList',
