@@ -1,40 +1,35 @@
-import Section from '@/components/Section/Section';
-import { H2, H3 } from '@/components/Heading/Heading';
-import ButtonLink from '@/components/ButtonLink/ButtonLink';
 import Link from 'next/link';
+
+import ButtonLink from '@/components/ButtonLink/ButtonLink';
+import { H2, H3 } from '@/components/Heading/Heading';
+import Section from '@/components/Section/Section';
 
 const INSTAGRAM_URL = process.env.NEXT_PUBLIC_INSTAGRAM_URL || '/';
 
 export default function SiteCTASection() {
   return (
     <Section>
-      <div id="booking" className="hidden" />
-      <H2>I can bring your nail dreams to life</H2>
+      <H2>Book your dreamy experience</H2>
       <Section as="div">
         <Section.Column doubleWidth>
           <p>
-            Please bear with me while my developer finishes my website - I&apos;ll be introducing a
-            booking system very soon!
+            Let me take care of you in my private, clean home salon — away from all the hustle and
+            bustle — with a beautiful nail design tailored just for you.
           </p>
           <p>
-            In the meantime, bookings can be made on{' '}
-            <Link href={INSTAGRAM_URL}>my Instagram profile</Link> - send me
-            a DM telling me what you&apos;d like and your preferred date and time, and I&apos;ll get
-            you booked in ASAP.
+            If you have any issues, questions, or to book an after-hours appointment, please{' '}
+            <Link href={INSTAGRAM_URL}>DM me on Instagram</Link> and let me know how I can help.
           </p>
-          <H3 variant='h4'>Opening hours: Mon - Sat, 9:00am - late (6pm last appointment)</H3>
-          <p>Appointments outside these hours are available by prior arrangement and will incur a small fee.</p>
+          <H3 variant="h4">Opening hours: Mon - Sat, 9:00am - late (6pm last appointment)</H3>
+          <p>Appointments outside these hours will incur a small fee.</p>
         </Section.Column>
         <Section.Column>
           <ul className="self-center flex flex-col items-stretch w-full p-0 my-0 list-none">
             <li className="block py-2">
               <ButtonLink href="/services">Service menu</ButtonLink>
             </li>
-            {/* <li className="block py-2">
-                <ButtonLink href="/faq">Booking FAQ</ButtonLink>
-              </li> */}
             <li className="block py-2">
-              <ButtonLink href={INSTAGRAM_URL} variant="cta">
+              <ButtonLink href="/book" variant="cta">
                 Book now
               </ButtonLink>
             </li>
