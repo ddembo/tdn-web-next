@@ -38,7 +38,8 @@ export default function BookingPage() {
               width: '100%',
               height: '100%',
               border: 'none',
-              padding: '0 4px'
+              maxWidth: '698px', // Keep it single-column
+              margin: '0 auto'
             }}
           />
           <Link href="/" className="self-center font-light text-sm no-underline hover:underline">
