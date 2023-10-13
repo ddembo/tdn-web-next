@@ -1,8 +1,8 @@
 import type { Metadata } from 'next/types';
-import Link from 'next/link';
 
 import { H1 } from '@/components/Heading/Heading';
 import SiteLogoFull from '@/components/icons/SiteLogoFull';
+import PromptLink from '@/components/PromptLink/PromptLink';
 
 import PageStructuredData from './PageStructuredData';
 
@@ -39,12 +39,12 @@ export default function BookingPage() {
               height: '100%',
               border: 'none',
               maxWidth: '698px', // Keep it single-column
-              margin: '0 auto'
+              margin: '0 auto',
             }}
           />
-          <Link href="/" className="self-center font-light text-sm no-underline hover:underline">
+          <PromptLink prompt="Are you sure you want to abort the booking process?">
             Back to Home
-          </Link>
+          </PromptLink>
         </div>
         <small className="w-full font-extralight">&copy; 2023 The Dreamy Nails</small>
       </div>
