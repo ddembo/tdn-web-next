@@ -10,7 +10,17 @@ export const metadata: Metadata = {
   title: 'Book an appointment - The Dreamy Nails',
   description: 'Select from my available services to craft your unique experience.',
 };
-
+/*
+TODO
+* add instructions ABOVE booking widget
+* TEST THE WIDGET THOROUGHLY & tweak calendar/booking settings
+  -- custom confirmation page/email?
+  -- require customer login?
+  -- calendar view
+  -- deposits!! connect stripe
+     CHECK stripe/email for auth
+  -- update README
+*/
 export default function BookingPage() {
   return (
     <>

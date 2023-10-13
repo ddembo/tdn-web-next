@@ -84,7 +84,7 @@ export default function ServiceMenu() {
                 </td>
                 <td className="pt-1 align-top pl-4">
                   <Heading as="p" variant="h4" className="lg:max-w-full">
-                    From +$15
+                    $15
                   </Heading>
                 </td>
               </tr>
@@ -129,7 +129,7 @@ export default function ServiceMenu() {
                 </td>
                 <td className="pt-1 align-top pl-4">
                   <Heading as="p" variant="h4" className="lg:max-w-full">
-                    From +$15
+                    +$15
                   </Heading>
                 </td>
               </tr>
@@ -203,7 +203,7 @@ export default function ServiceMenu() {
                 </td>
                 <td className="pt-4 align-top pl-4">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $60
+                    $70
                   </Heading>
                 </td>
               </tr>
@@ -256,27 +256,9 @@ export default function ServiceMenu() {
             <tbody>
               <tr>
                 <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Removal (External, no SNS & acrylic)</H3>
+                  <H3 className="mb-0 lg:mb-0">Gel Removal (no SNS or acrylic)</H3>
                   <p className="text-sm">
-                    Gel nail enhancement that has been performed by someone else. This includes a
-                    soak-off with acetone prior to any new application (Please note that this does
-                    not include any manicure)
-                  </p>
-                </td>
-                <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
-                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $40
-                  </Heading>
-                </td>
-              </tr>
-
-              <tr>
-                <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Removal (In-house)</H3>
-                  <p className="text-sm">
-                    Nail enhancement that has been performed by myself. This includes a soak-off
-                    with acetone prior to any new application (Please note that this does not
-                    include any manicure)
+                    An acetone soak-off to remove a previous gel nail enhancement. Please note that this does not include any manicure.
                   </p>
                 </td>
                 <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
@@ -301,6 +283,7 @@ export default function ServiceMenu() {
               <tr>
                 <td className="pt-4">
                   <H3 className="mb-0 lg:mb-0">Cuticle oil pen</H3>
+                  <p className="text-sm">My homemade natural cuticle oil is vegan, cruelty free, and will keep your cuticles looking and feeling their best between visits. Made from nourishing ingredients such as jojoba, calendula and Vitamin E.</p>
                 </td>
                 <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
@@ -311,22 +294,11 @@ export default function ServiceMenu() {
 
               <tr>
                 <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Late appointment (after 6pm weekdays)</H3>
+                  <H3 className="mb-0 lg:mb-0">After-hours, weekend or public holiday appointment</H3><p className="text-sm">This surcharge applies for all appointments after 5:30pm Mon-Fri, or any time on a Saturday, Sunday or public holiday.</p>
                 </td>
                 <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $15
-                  </Heading>
-                </td>
-              </tr>
-
-              <tr>
-                <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Weekends & public holidays</H3>
-                </td>
-                <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
-                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $25
+                    $20
                   </Heading>
                 </td>
               </tr>
