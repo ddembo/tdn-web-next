@@ -71,12 +71,13 @@ export default function Home() {
             </Section.Column>
           </Section>
         </Container>
-        <Section>
+        {/* FIXME: Issue #18. */}
+        {/* <Section>
           <Section.Column>
-            <H2>My latest nail art</H2>
+            <H2 className="text-center">My latest nail art</H2>
             <SiteInstagramGallery />
           </Section.Column>
-        </Section>
+        </Section> */}
       </div>
       <SiteCTASection />
     </>
