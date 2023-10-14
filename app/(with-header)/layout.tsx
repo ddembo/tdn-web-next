@@ -7,7 +7,6 @@ export default function WithFooterCTALayout({ children }: { children: React.Reac
     <>
       <SiteHeader />
       <main>{children}</main>
-      <SiteCTASection />
       <SiteFooter />
     </>
   );

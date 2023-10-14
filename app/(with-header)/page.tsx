@@ -8,6 +8,7 @@ import Hero from '@/components/Hero/Hero';
 import ButtonLink from '@/components/ButtonLink/ButtonLink';
 import SiteInstagramGallery from '@/components/SiteInstagramGallery/SiteInstagramGallery';
 import SiteLogoFull from '@/components/icons/SiteLogoFull';
+import SiteCTASection from '@/components/SiteCTASection/SiteCTASection';
 
 import tdnHeroSamples from '@/public/tdn-hero-samples.webp';
 import tdnFeatureImg from '@/public/pastel-princess-nail-design.webp';
@@ -77,6 +78,7 @@ export default function Home() {
           </Section.Column>
         </Section>
       </div>
+      <SiteCTASection />
     </>
   );
 }
