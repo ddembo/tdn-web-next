@@ -14,7 +14,7 @@ const pageStructuredData: Graph = {
       '@id': ThisPageId,
       isPartOf: { '@id': SiteNodeId },
       dateCreated: '2023-09-21T20:39:00+11:00',
-      dateModified: '2023-10-12T20:41:00+11:00',
+      dateModified: '2023-10-14T19:30:00+11:00',
       provider: { '@id': OrganizationId },
       breadcrumb: { '@id': BreadcrumbId },
     } as WebPage,
@@ -23,7 +23,7 @@ const pageStructuredData: Graph = {
       '@id': BreadcrumbId,
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: RootPageId },
-        { '@type': 'ListItem', position: 2, name: 'Book', item: ThisPageId },
+        { '@type': 'ListItem', position: 2, name: 'Book an appointment', item: ThisPageId },
       ],
     } as BreadcrumbList,
   ],
