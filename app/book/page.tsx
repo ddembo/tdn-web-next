@@ -28,22 +28,36 @@ export default function BookingPage() {
           <SiteLogoFull />
         </div>
         <H1 variant="h2">Book an appointment</H1>
+        <p className="text-sm italic py-0 my-0">Open Mon - Sat: 9:00am - late (5:30pm last appointment)</p>
         <InfoPanel>
           <ul className="list-disc pl-4">
             <li>
-              <p className="text-sm mb-1">The booking system may limit available times to prevent overbooking. If you don&apos;t see your preferred time, I may still be able to accommodate you. DM @thedreamynails on Instagram and I&apos;ll do my best.</p>
+              <p className="text-sm mb-1">
+                The booking system may limit available times to prevent overbooking. Also, I can
+                accommodate appointments outside my regular hours. If you don&apos;t see your
+                preferred time, DM @thedreamynails on Instagram and I&apos;ll do my best to
+                accommodate you.
+              </p>
             </li>
             <li>
-              <p className="text-sm mb-1">A deposit of <b>$30</b> is required for all appointments to be confirmed. The deposit amount will be deducted from the total price of service on the day.</p>
+              <p className="text-sm mb-1">
+                A deposit of $30 is required for all appointments to be confirmed. The deposit
+                amount will be deducted from the final amount due on the day.
+              </p>
             </li>
             <li>
-              <p className="text-sm mb-1">Appointments after 5.30pm Mon-Fri, or any time on a weekend or public holiday, will incur an additional fee of <b>$20</b>.</p>
+              <p className="text-sm mb-1">
+                Appointments after 5.30pm Mon-Fri, or any time on a weekend or public holiday, will
+                incur an additional fee of $20.
+              </p>
             </li>
             <li>
-              <p className="text-sm mb-1">Vegan, cruelty-free and natural cuticle oil pens are available to purchase on the day for <b>$10</b>.</p>
-            </li>
-            <li>
-              <p className="text-sm mb-1">The price displayed during booking is an estimate only based on services you select. The final price and services performed will be confirmed prior to starting work on the day of your appointment.</p>
+              <p className="text-sm mb-1">
+                The price displayed during booking is an estimate only based on services you select,
+                please DM @thedreamynails on Instagram if you need help making your selections. The
+                final amount due may be different if services need to be altered or added to your
+                order, but such changes will always be confirmed before I begin your appointment.
+              </p>
             </li>
           </ul>
         </InfoPanel>
