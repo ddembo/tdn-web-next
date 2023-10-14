@@ -47,7 +47,7 @@ export default function BookingPage() {
             </li>
             <li>
               <p className="text-sm mb-1">
-                Appointments after 5.30pm Mon-Fri, or any time on a weekend or public holiday, will
+                Appointments after 5.30pm Mon-Sat, or any time on a Sunday or public holiday, will
                 incur an additional fee of $20.
               </p>
             </li>

@@ -39,7 +39,7 @@ export default function ServiceMenu() {
                 <td className="pt-4">
                   <H3 className="mb-0 lg:mb-0">Structured manicure (BIAB)</H3>
                   <p className="text-sm mb-2">
-                    Includes signature cuticle care, nail prep, and application of a builder gel and
+                    Includes detailed cuticle care, nail prep, and application of a builder gel and
                     gel colour over the natural nails.
                   </p>
                 </td>
@@ -77,7 +77,7 @@ export default function ServiceMenu() {
                 <td className="pt-4">
                   <H3 className="mb-0 lg:mb-0">Soft gel extensions</H3>
                   <p className="text-sm mb-2">
-                    Includes signature cuticle care, nail prep, application of soft gel extensions
+                    Includes detailed cuticle care, nail prep, application of soft gel extensions
                     with a choice of up to 3 gel colours.
                   </p>
                 </td>
@@ -115,7 +115,7 @@ export default function ServiceMenu() {
                 <td className="py-4">
                   <H3 className="mb-0 lg:mb-0">Naked manicure</H3>
                   <p className="text-sm">
-                    Includes signature cuticle care, buff & shape and a choice of clear top coat
+                    Includes detailed cuticle care, buff & shape and a choice of clear top coat
                   </p>
                 </td>
                 <td className="py-4 align-top pl-4 min-w-[115px] lg:min-w-[125px]">
@@ -294,8 +294,8 @@ export default function ServiceMenu() {
                     After-hours, weekend or public holiday appointment
                   </H3>
                   <p className="text-sm">
-                    This surcharge applies for all appointments after 5:30pm Mon-Fri, or any time on
-                    a Saturday, Sunday or public holiday.
+                    This surcharge applies for all appointments after 5:30pm Mon-Sat, or any time on
+                    a Sunday or public holiday.
                   </p>
                 </td>
                 <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
