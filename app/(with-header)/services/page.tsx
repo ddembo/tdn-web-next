@@ -3,13 +3,17 @@ import type { Metadata } from 'next/types';
 import Section from '@/components/Section/Section';
 import Heading, { H2, H3, H4 } from '@/components/Heading/Heading';
 import Hero from '@/components/Hero/Hero';
+import SiteCTASection from '@/components/SiteCTASection/SiteCTASection';
 
 import PageStructuredData from './PageStructuredData';
 
 export const metadata: Metadata = {
   title: 'Service menu - The Dreamy Nails',
-  description: 'My individually-tailored services include BIAB manicures, bespoke nail art, soft gel extensions & more',
+  description:
+    'My individually-tailored services include BIAB manicures, bespoke nail art, soft gel extensions & more',
 };
+
+const INSTAGRAM_URL = process.env.NEXT_PUBLIC_INSTAGRAM_URL || '/';
 
 /** 
   NOTE about implementation: a static list is not ideal, but we don't have a CMS or DB to work with
@@ -26,41 +30,31 @@ export default function ServiceMenu() {
         <Section.Column>
           <H2>Base services</H2>
           <p className="text-sm italic">
-            The Dreamy Nails is a gel-only salon. All services finish with cuticle oil and a hand-cream massage.
+            The Dreamy Nails is a gel-only salon. All services finish with cuticle oil and a
+            hand-cream massage.
           </p>
           <table className="mr-auto w-full min-w-[66%] lg:w-[66%]">
             <tbody>
               <tr>
-                <td className="py-4">
-                  <H3 className="mb-0 lg:mb-0">Naked manicure</H3>
-                  <p className="text-sm">
-                    Includes signature cuticle care, buff & shape and a choice of clear top coat
-                  </p>
-                </td>
-                <td className="py-4 align-top pl-4 min-w-[115px] lg:min-w-[125px]">
-                  <Heading as="p" variant="h3" className="lg:max-w-full">
-                    $55
-                  </Heading>
-                </td>
-              </tr>
-
-              <tr>
                 <td className="pt-4">
                   <H3 className="mb-0 lg:mb-0">Structured manicure (BIAB)</H3>
-                  <p className="text-sm">
-                    Includes signature cuticle care, nail prep, and application of a builder gel and
-                    gel colour over the natural nails
+                  <p className="text-sm mb-2">
+                    Includes detailed cuticle care, nail prep, and application of a builder gel and
+                    gel colour over the natural nails.
                   </p>
                 </td>
                 <td className="pt-4 align-top pl-4">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    From $65
+                    $80
                   </Heading>
                 </td>
               </tr>
               <tr>
-                <td className="pt-1">
-                  <H4>Infill (2 — 4 weeks)</H4>
+                <td className="pl-4">
+                  <H4>Infill</H4>
+                  <p className="text-sm mb-2">
+                    For clients returning to The Dreamy Nails within 2-4 weeks.
+                  </p>
                 </td>
                 <td className="pt-1 align-top pl-4">
                   <Heading as="p" variant="h4" className="mb-0 lg:mb-0 lg:max-w-full">
@@ -69,22 +63,12 @@ export default function ServiceMenu() {
                 </td>
               </tr>
               <tr>
-                <td className="pt-1">
-                  <H4>Rebalance (5+ weeks)</H4>
-                </td>
-                <td className="pt-1 align-top pl-4">
-                  <Heading as="p" variant="h4" className="lg:max-w-full">
-                    $80
-                  </Heading>
-                </td>
-              </tr>
-              <tr>
-                <td className="pt-1">
+                <td className="pt-1 pl-4">
                   <H4>Xl — xxxl length</H4>
                 </td>
                 <td className="pt-1 align-top pl-4">
                   <Heading as="p" variant="h4" className="lg:max-w-full">
-                    From +$15
+                    +$15
                   </Heading>
                 </td>
               </tr>
@@ -92,20 +76,23 @@ export default function ServiceMenu() {
               <tr>
                 <td className="pt-4">
                   <H3 className="mb-0 lg:mb-0">Soft gel extensions</H3>
-                  <p className="text-sm">
-                    Includes signature cuticle care, nail prep, application of soft gel extensions
-                    with a choice of up to 3 gel colours
+                  <p className="text-sm mb-2">
+                    Includes detailed cuticle care, nail prep, application of soft gel extensions
+                    with a choice of up to 3 gel colours.
                   </p>
                 </td>
                 <td className="pt-4 align-top pl-4">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    From $65
+                    $80
                   </Heading>
                 </td>
               </tr>
               <tr>
-                <td className="pt-1">
-                  <H4>Infill (2 — 4 weeks)</H4>
+                <td className="pl-4">
+                  <H4>Infill</H4>
+                  <p className="text-sm mb-2">
+                    For clients returning to The Dreamy Nails within 2-4 weeks.
+                  </p>
                 </td>
                 <td className="pt-1 align-top pl-4">
                   <Heading as="p" variant="h4" className="mb-0 lg:mb-0 lg:max-w-full">
@@ -114,22 +101,26 @@ export default function ServiceMenu() {
                 </td>
               </tr>
               <tr>
-                <td className="pt-1">
-                  <H4>Rebalance (5+ weeks)</H4>
-                </td>
-                <td className="pt-1 align-top pl-4">
-                  <Heading as="p" variant="h4" className="lg:max-w-full">
-                    $80
-                  </Heading>
-                </td>
-              </tr>
-              <tr>
-                <td className="pt-1">
+                <td className="pt-1 pl-4">
                   <H4>Xl — xxxl length</H4>
                 </td>
                 <td className="pt-1 align-top pl-4">
                   <Heading as="p" variant="h4" className="lg:max-w-full">
-                    From +$15
+                    +$15
+                  </Heading>
+                </td>
+              </tr>
+
+              <tr>
+                <td className="py-4">
+                  <H3 className="mb-0 lg:mb-0">Naked manicure</H3>
+                  <p className="text-sm">
+                    Includes detailed cuticle care, buff & shape and a choice of clear top coat
+                  </p>
+                </td>
+                <td className="py-4 align-top pl-4 min-w-[115px] lg:min-w-[125px]">
+                  <Heading as="p" variant="h3" className="lg:max-w-full">
+                    $55
                   </Heading>
                 </td>
               </tr>
@@ -203,7 +194,7 @@ export default function ServiceMenu() {
                 </td>
                 <td className="pt-4 align-top pl-4">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $60
+                    $70
                   </Heading>
                 </td>
               </tr>
@@ -256,27 +247,10 @@ export default function ServiceMenu() {
             <tbody>
               <tr>
                 <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Removal (External, no SNS & acrylic)</H3>
+                  <H3 className="mb-0 lg:mb-0">Gel Removal (no SNS or acrylic)</H3>
                   <p className="text-sm">
-                    Gel nail enhancement that has been performed by someone else. This includes a
-                    soak-off with acetone prior to any new application (Please note that this does
-                    not include any manicure)
-                  </p>
-                </td>
-                <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
-                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $40
-                  </Heading>
-                </td>
-              </tr>
-
-              <tr>
-                <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Removal (In-house)</H3>
-                  <p className="text-sm">
-                    Nail enhancement that has been performed by myself. This includes a soak-off
-                    with acetone prior to any new application (Please note that this does not
-                    include any manicure)
+                    An acetone soak-off to remove a previous gel nail enhancement. Please note that
+                    this does not include any manicure.
                   </p>
                 </td>
                 <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
@@ -301,6 +275,11 @@ export default function ServiceMenu() {
               <tr>
                 <td className="pt-4">
                   <H3 className="mb-0 lg:mb-0">Cuticle oil pen</H3>
+                  <p className="text-sm">
+                    My homemade natural cuticle oil is vegan, cruelty free, and will keep your
+                    cuticles looking and feeling their best between visits. Made from nourishing
+                    ingredients such as jojoba, calendula and Vitamin E.
+                  </p>
                 </td>
                 <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
@@ -311,22 +290,17 @@ export default function ServiceMenu() {
 
               <tr>
                 <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Late appointment (after 6pm weekdays)</H3>
+                  <H3 className="mb-0 lg:mb-0">
+                    After-hours, weekend or public holiday appointment
+                  </H3>
+                  <p className="text-sm">
+                    This surcharge applies for all appointments after 5:30pm Mon-Sat, or any time on
+                    a Sunday or public holiday.
+                  </p>
                 </td>
                 <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $15
-                  </Heading>
-                </td>
-              </tr>
-
-              <tr>
-                <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Weekends & public holidays</H3>
-                </td>
-                <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
-                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $25
+                    $20
                   </Heading>
                 </td>
               </tr>
@@ -340,6 +314,7 @@ export default function ServiceMenu() {
           </p>
         </Section.Column>
       </Section>
+      <SiteCTASection hideServiceMenu />
     </div>
   );
 }

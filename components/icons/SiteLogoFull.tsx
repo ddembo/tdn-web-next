@@ -1,12 +1,11 @@
 import { SVGIconProps } from './types';
 
-export default function SiteLogoFull({ width = 296, height = 136 }: SVGIconProps) {
+export default function SiteLogoFull() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlSpace="preserve"
-      width={width}
-      height={height}
+      width="100%"
       viewBox="-0.9 -0.5 80 37"
       className="block mx-auto lg:mx-0"
     >

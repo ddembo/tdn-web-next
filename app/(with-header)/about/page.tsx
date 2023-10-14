@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Section from '@/components/Section/Section';
 import { H2 } from '@/components/Heading/Heading';
 import Hero from '@/components/Hero/Hero';
+import SiteCTASection from '@/components/SiteCTASection/SiteCTASection';
 
 import imgSelina from '@/public/selina-about-me.webp';
 
@@ -90,6 +91,7 @@ export default function AboutMe() {
           </p>
         </Section.Column>
       </Section>
+      <SiteCTASection />
     </div>
   );
 }

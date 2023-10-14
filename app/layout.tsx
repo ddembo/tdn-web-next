@@ -3,8 +3,6 @@ import { DM_Sans, Jost } from 'next/font/google';
 import { twMerge } from 'tailwind-merge';
 
 import SiteAnalyticsTag from '@/components/SiteAnalyticsTag/SiteAnalyticsTag';
-import SiteHeader from '@/components/SiteHeader/SiteHeader';
-import SiteFooter from '@/components/SiteFooter/SiteFooter';
 
 import './globals.css';
 
@@ -38,12 +36,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={twMerge(fontDMSans.className, fontJost.className)}>
+    <html lang="en" className="h-full">
+      <body className={twMerge(fontDMSans.className, fontJost.className, 'h-full')}>
         <SiteAnalyticsTag />
-        <SiteHeader />
-        <main>{children}</main>
-        <SiteFooter />
+        {children}
       </body>
     </html>
   );

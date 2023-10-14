@@ -46,7 +46,7 @@ export default function SiteHeader() {
               </ButtonLink>
             </li>
             <li className="block py-2">
-              <ButtonLink href={ctaLink} variant="cta">
+              <ButtonLink href="/book" variant="cta">
                 Book now
               </ButtonLink>
             </li>

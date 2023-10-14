@@ -41,10 +41,11 @@ pnpm run dev
 
 ## Core Features
 
-TODO
+TODO - expand on this list & items
 Google Analytics
 Instagram basic display API
 Edge Functions (/app/api folder)
+Embedded booking widget (Timely)
 
 ## Discussion & decisions made
 
