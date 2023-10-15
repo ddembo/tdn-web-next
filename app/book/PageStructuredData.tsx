@@ -1,6 +1,6 @@
-import type { WebPage, Graph, BreadcrumbList } from 'schema-dts';
+import type { WebPage, Graph, BreadcrumbList, Action } from 'schema-dts';
 
-import { OrganizationId, RootPageId, SiteNodeId } from '@/app/RootStructuredData';
+import { LogoUrl, OrganizationId, RootPageId, SiteNodeId } from '@/app/RootStructuredData';
 
 /* NOTE: this schema references objects defined in /app/RootStructuredData.tsx */
 const ThisPageId = 'https://www.thedreamynails.com/book/';
@@ -14,9 +14,16 @@ const pageStructuredData: Graph = {
       '@id': ThisPageId,
       isPartOf: { '@id': SiteNodeId },
       dateCreated: '2023-09-21T20:39:00+11:00',
-      dateModified: '2023-10-14T19:30:00+11:00',
+      dateModified: '2023-10-15T14:05:00+11:00',
       provider: { '@id': OrganizationId },
       breadcrumb: { '@id': BreadcrumbId },
+      thumbnailUrl: LogoUrl,
+      potentialAction: [{
+        '@type': 'BuyAction',
+        target: [ThisPageId],
+        name: 'Book an appointment',
+        seller: { '@id': OrganizationId },
+      } as Action,],
     } as WebPage,
     {
       '@type': 'BreadcrumbList',
