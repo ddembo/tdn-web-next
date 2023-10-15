@@ -36,6 +36,7 @@ export default function Home() {
               priority
               quality={100}
               placeholder="blur"
+              sizes="(max-width: 1024px) 90vw, 60vw"
             />
           }
         />
