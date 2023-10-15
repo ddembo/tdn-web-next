@@ -1,7 +1,7 @@
 import type { Metadata } from 'next/types';
 
 import Section from '@/components/Section/Section';
-import Heading, { H2, H3, H4 } from '@/components/Heading/Heading';
+import Heading, { H1, H2, H3, H4 } from '@/components/Heading/Heading';
 import Hero from '@/components/Hero/Hero';
 import SiteCTASection from '@/components/SiteCTASection/SiteCTASection';
 
@@ -13,8 +13,6 @@ export const metadata: Metadata = {
     'My individually-tailored services include BIAB manicures, bespoke nail art, soft gel extensions & more',
 };
 
-const INSTAGRAM_URL = process.env.NEXT_PUBLIC_INSTAGRAM_URL || '/';
-
 /** 
   NOTE about implementation: a static list is not ideal, but we don't have a CMS or DB to work with
   yet, and a redesign is on the horizon, so I've decided to keep it simple for now. Services and
@@ -24,8 +22,7 @@ export default function ServiceMenu() {
   return (
     <div className="grow">
       <PageStructuredData />
-      {/* FIXME: fix types for heading prop so I don't need a Fragment */}
-      <Hero heading={<>Service menu</>} />
+      <Hero title={<H1>Service menu</H1>} />
       <Section as="article">
         <Section.Column>
           <H2>Base services</H2>

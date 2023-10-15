@@ -2,16 +2,15 @@ import Image from 'next/image';
 import type { Metadata } from 'next/types';
 
 import Section from '@/components/Section/Section';
-import { H2 } from '@/components/Heading/Heading';
+import { H1 } from '@/components/Heading/Heading';
 import Container from '@/components/Container/Container';
 import Hero from '@/components/Hero/Hero';
 import ButtonLink from '@/components/ButtonLink/ButtonLink';
-import SiteInstagramGallery from '@/components/SiteInstagramGallery/SiteInstagramGallery';
-import SiteLogoFull from '@/components/icons/SiteLogoFull';
 import SiteCTASection from '@/components/SiteCTASection/SiteCTASection';
 
 import tdnHeroSamples from '@/public/tdn-hero-samples.webp';
 import tdnFeatureImg from '@/public/pastel-princess-nail-design.webp';
+import tdnLogoFull from '@/public/tdn-logo-full.svg';
 
 import RootStructuredData from '../RootStructuredData';
 
@@ -28,7 +27,7 @@ export default function Home() {
       <div className="grow">
         <Hero
           expanded
-          heading={<SiteLogoFull />}
+          title={<Image src={tdnLogoFull} alt="The Dreamy Nails" width={300} />}
           subtitle="BIAB nail art, manicures & press-ons - creating unique hand-painted nail designs from my private home nail salon in Sydney."
           feature={
             <Image
@@ -44,7 +43,7 @@ export default function Home() {
         <Container>
           <Section>
             <Section.Column doubleWidth>
-              <H2 variant="h1">Welcome to The Dreamy Nails</H2>
+              <H1>Welcome to The Dreamy Nails</H1>
               <p>
                 Hello! I&apos;m Selina, a nail artist working from my private and comfortable home
                 studio. I love turning ordinary nails into works of art!

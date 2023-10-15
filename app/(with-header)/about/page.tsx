@@ -2,7 +2,7 @@ import type { Metadata } from 'next/types';
 import Image from 'next/image';
 
 import Section from '@/components/Section/Section';
-import { H2 } from '@/components/Heading/Heading';
+import { H1, H2, H3 } from '@/components/Heading/Heading';
 import Hero from '@/components/Hero/Hero';
 import SiteCTASection from '@/components/SiteCTASection/SiteCTASection';
 
@@ -23,13 +23,12 @@ export default function AboutMe() {
       <Hero
         contained
         flipped
-        // FIXME: fix types for heading prop so I don't need a Fragment
-        heading={<>About me</>}
-        subtitle="Hello and welcome to The Dreamy Nails: my little oasis away from the stresses of life! I'm Selina 🤗"
+        title={<H1>About me</H1>}
+        subtitle="Hello and welcome! I'm Selina 🤗"
         feature={
           <Image
             src={imgSelina}
-            alt="Photo of Selina, from The Dreamy Nails in Erskineville, with beautiful hand-painted nail art"
+            alt="Photo of Selina, owner of The Dreamy Nails"
             priority
             quality={100}
             placeholder="blur"
@@ -38,6 +37,7 @@ export default function AboutMe() {
       />
       <Section as="article">
         <Section.Column>
+          <H2>How The Dreamy Nails was born</H2>
           <p>
             I&apos;ve always been creative from a young age, but especially growing up in an Asian
             family, I never thought that a career in Arts would be an option for me.
@@ -68,22 +68,22 @@ export default function AboutMe() {
           </p>
           <p>
             When I thought about the kind of person that I am, and my core values, I knew I wanted
-            to do things a little differently to some other Sydney nail studios.
+            to do things a little differently.
           </p>
-          <H2 variant="h3">Creating a safe space</H2>
+          <H3>Creating a safe space</H3>
           <p>
             I want every client to feel like they are going to a friend&apos;s house to get their
             nails done. Somewhere that you can relax and be your authentic self, no matter what that
             means for you. If you need any accommodations made to feel comfortable, please send me a
             message and I&apos;ll be happy to discuss them with you!
           </p>
-          <H2 variant="h3">An island of calm</H2>
+          <H3>An island of calm</H3>
           <p>
             As an introvert with anxiety I would dread every time I needed to get my nails done at a
             busy, noisy shopping mall. You can get pampered in my private, clean and
             professionally-equipped home salon — away from all the chaos.
           </p>
-          <H2 variant="h3">Personalised nail designs</H2>
+          <H3>Personalised nail designs</H3>
           <p>
             You&apos;re unique, and your nail art should celebrate that fact. I tailor every design
             based on things like your specific style, interests, inspo pics and skin tone, so that

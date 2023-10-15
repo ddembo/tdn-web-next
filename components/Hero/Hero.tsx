@@ -10,7 +10,7 @@ import HeroScrollIcon from './HeroScrollIcon';
 interface HeroInnerProps {
   expanded?: boolean;
   flipped?: boolean;
-  heading: ReactElement;
+  title: ReactElement;
   subtitle?: string;
   feature?: ReactElement;
 }
@@ -19,7 +19,7 @@ interface HeroWrapperProps {
   contained?: boolean;
 }
 
-const HeroInner = ({ expanded, flipped, heading, subtitle, feature }: HeroInnerProps) => {
+const HeroInner = ({ expanded, flipped, title, subtitle, feature }: HeroInnerProps) => {
   return (
     <header
       className={twMerge(
@@ -34,7 +34,7 @@ const HeroInner = ({ expanded, flipped, heading, subtitle, feature }: HeroInnerP
           feature && flipped && 'lg:order-last' // Put content after feature if flag true
         )}
       >
-        <H1>{heading}</H1>
+        {title}
         {subtitle && (
           <p
             className="pt-6 font-heading tracking-wide text-2xl font-normal text-center lg:text-left"
