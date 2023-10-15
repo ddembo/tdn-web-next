@@ -27,7 +27,7 @@ export default function SiteCTASection({ hideServiceMenu = false }: SiteCTASecti
             </p>
           </Section.Column>
           <Section.Column>
-            <div className="w-full my-4 md:my-0 text-center flex flex-col gap-6 md:gap-4 items-stretch">
+            <div className="w-full md:w-10/12 mx-auto my-4 md:my-0 text-center flex flex-col gap-6 md:gap-4 items-stretch">
               <ul className="self-center flex flex-col items-stretch w-full p-0 my-0 list-none">
                 {!hideServiceMenu && (
                   <li className="block py-2">

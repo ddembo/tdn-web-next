@@ -3,22 +3,21 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 import ButtonLink from '@/components/ButtonLink/ButtonLink';
-import SiteLogoMoonOnly from '@/components/icons/SiteLogoMoonOnly';
 import SiteHeaderToggle from './SiteHeaderToggle';
+
+import tdnLogo from '@/public/tdn-logo.svg';
 
 export default function SiteHeader() {
   const [isExpanded, setExpanded] = useState(false);
-  const ctaLink = usePathname() + '/#booking';
 
   return (
     <header className="z-50 sticky flex items-center justify-between bg-white top-0 w-full py-2 px-4 mx-auto">
-      <Link href="/">
-        <SiteLogoMoonOnly />
+      <Link href="/" aria-label="The Dreamy Nails Homepage">
+        <Image width={26} src={tdnLogo} alt='' priority />
       </Link>
       <SiteHeaderToggle isExpanded={isExpanded} onClick={() => setExpanded((prev) => !prev)} />
       <div
