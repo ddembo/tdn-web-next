@@ -36,6 +36,7 @@ export default function Home() {
               priority
               quality={100}
               placeholder="blur"
+              sizes="(max-width: 664px) calc(100vw - 64px), 600px"
             />
           }
         />
@@ -66,6 +67,7 @@ export default function Home() {
                 width={350}
                 height={350}
                 className="mx-auto"
+                sizes="(min-width: 1040px) 310px, (min-width: 440px) 350px, calc(95vw - 49px)"
               />
             </Section.Column>
           </Section>
