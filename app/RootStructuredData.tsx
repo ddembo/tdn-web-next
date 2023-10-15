@@ -22,6 +22,7 @@ const didResolveVars = INSTAGRAM_URL && TIKTOK_URL;
 export const RootPageId = HOMEPAGE_URL;
 export const SiteNodeId = `${HOMEPAGE_URL}#site`;
 export const OrganizationId = `${HOMEPAGE_URL}#organization`;
+export const AddressId = `${HOMEPAGE_URL}#address`;
 const BreadcrumbId = `${HOMEPAGE_URL}#breadcrumb`;
 const LogoId = `${HOMEPAGE_URL}#logo`;
 export const LogoUrl = `${HOMEPAGE_URL}tdn-logo.svg`;
@@ -37,6 +38,14 @@ const commonSiteAndOrgData: Partial<WebSite> & Partial<NailSalon> = {
 const pageStructuredData: Graph = {
   '@context': 'https://schema.org',
   '@graph': [
+    {
+      '@type': 'PostalAddress',
+      '@id': AddressId,
+      addressLocality: 'Sydney',
+      addressRegion: 'NSW',
+      addressCountry: 'AU',
+      postalCode: '2043',
+    } as PostalAddress,
     {
       '@type': 'ImageObject',
       '@id': LogoId,
@@ -79,13 +88,9 @@ const pageStructuredData: Graph = {
       '@id': OrganizationId,
       logo: { '@id': LogoId },
       ...commonSiteAndOrgData,
-      location: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Sydney',
-        addressRegion: 'NSW',
-        addressCountry: 'AU',
-        postalCode: '2043',
-      } as PostalAddress,
+      address: { '@id': AddressId },
+      location: { '@id': AddressId },
+      image: { '@id': LogoId },
       openingHoursSpecification: {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
