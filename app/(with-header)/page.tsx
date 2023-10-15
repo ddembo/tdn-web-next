@@ -55,7 +55,7 @@ export default function Home() {
               <p>Do you want to know more about my salon and my journey with nail art?</p>
               <div>
                 <ButtonLink href="/about" variant="subtle">
-                  Read more
+                  Learn more about me
                 </ButtonLink>
               </div>
             </Section.Column>
