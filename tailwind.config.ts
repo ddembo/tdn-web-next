@@ -21,8 +21,8 @@ const config: Config = {
         'tdn-highlight-dark': '#ecadb7',
       },
       fontFamily: {
-        heading: ['Jost', 'Arial', 'Helvetica', 'sans-serif'],
-        body: ['"DM Sans"', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+        heading: ['var(--font-jost)', 'Arial', 'Helvetica', 'sans-serif'],
+        body: ['var(--font-dm-sans)', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
       },
       maxWidth: widthExtensions,
       width: widthExtensions,
