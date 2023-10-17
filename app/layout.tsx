@@ -8,8 +8,8 @@ import './globals.css';
 
 export const runtime = 'edge'; // Applies to all pages
 
-const fontJost = Jost({ subsets: ['latin'], display: 'swap' });
-const fontDMSans = DM_Sans({ style: ['normal', 'italic'], subsets: ['latin'], display: 'swap' });
+const fontJost = Jost({ subsets: ['latin'], display: 'swap', variable: '--font-jost' });
+const fontDMSans = DM_Sans({ style: ['normal', 'italic'], subsets: ['latin'], display: 'swap', variable: '--font-dm-sans' });
 
 /* NOTE: Next.js sets an incorrect prop if using the file convention described in docs:
  *  https://nextjs.org/docs/app/api-reference/file-conventions/metadata/app-icons#apple-icon.
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="h-full">
-      <body className={twMerge(fontDMSans.className, fontJost.className, 'h-full')}>
+      <body className={twMerge(fontDMSans.variable, fontJost.variable, 'h-full')}>
         <SiteAnalyticsTag />
         {children}
       </body>
