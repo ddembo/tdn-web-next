@@ -53,6 +53,8 @@ const pageStructuredData: Graph = {
       url: LogoUrl,
       contentUrl: LogoUrl,
       caption: 'The Dreamy Nails',
+      width: { '@type': 'QuantitativeValue', value: '128' },
+      height: { '@type': 'QuantitativeValue', value: '180' },
     } as ImageObject,
     {
       '@type': 'WebPage',
