@@ -54,11 +54,9 @@ export default function Home() {
                 and walking distance from Newtown and Redfern.
               </p>
               <p>Do you want to know more about my salon and my journey with nail art?</p>
-              <div>
-                <ButtonLink href="/about" variant="subtle">
-                  Learn more about me
-                </ButtonLink>
-              </div>
+              <ButtonLink href="/about" variant="subtle">
+                Learn more about me
+              </ButtonLink>
             </Section.Column>
             <Section.Column>
               <Image
@@ -67,7 +65,7 @@ export default function Home() {
                 width={350}
                 height={350}
                 className="mx-auto"
-                sizes="(min-width: 1040px) 310px, (min-width: 440px) 350px, calc(95vw - 49px)"
+                sizes="(min-width: 440px) 350px, (min-width: 1040px) 310px, calc(95vw - 49px)"
               />
             </Section.Column>
           </Section>
