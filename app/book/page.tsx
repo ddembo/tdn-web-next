@@ -34,7 +34,7 @@ export default function BookingPage() {
             </li>
             <li>
               <p className="text-sm mb-1">
-                A deposit of $30 is required for all appointments to be confirmed. The deposit
+                A deposit of 40% is required for all appointments to be confirmed. The deposit
                 amount will be deducted from the final amount due on the day.
               </p>
             </li>
