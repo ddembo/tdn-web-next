@@ -23,6 +23,7 @@ const config: Config = {
       fontFamily: {
         heading: ['var(--font-jost)', 'Arial', 'Helvetica', 'sans-serif'],
         body: ['var(--font-dm-sans)', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+        hbd: ['var(--font-pacifico)', 'Arial', 'Helvetica', 'sans-serif']
       },
       maxWidth: widthExtensions,
       width: widthExtensions,
