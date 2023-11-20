@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Disallow: /hbd/
+Sitemap: https://www.thedreamynails.com/sitemap.xml
