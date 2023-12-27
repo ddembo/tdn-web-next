@@ -42,7 +42,7 @@ export default function SiteCTASection({ hideServiceMenu = false }: SiteCTASecti
                 <li className="block py-2">
                   <H3 variant="h4">Opening hours</H3>
                   <p className="px-4">
-                    <strong>Mon - Sat</strong>: 9:00am - late
+                    <strong>Tue - Thu</strong>: 9:00am - late
                     <br />
                     (5:30pm last appointment)
                   </p>
