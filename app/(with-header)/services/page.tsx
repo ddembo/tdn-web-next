@@ -292,7 +292,7 @@ export default function ServiceMenu() {
                   </H3>
                   <p className="text-sm">
                     This surcharge applies for any appointment that begins outside regular opening
-                    hours, e.g. any time on Fri-Mon, or before 9:00am or after 5:30pm Tue-Thu.
+                    hours, e.g. public holidays, any time on Fri-Mon, or before 9:00am or after 5:30pm Tue-Thu.
                   </p>
                 </td>
                 <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
