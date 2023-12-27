@@ -291,8 +291,8 @@ export default function ServiceMenu() {
                     After-hours, weekend or public holiday appointment
                   </H3>
                   <p className="text-sm">
-                    This surcharge applies for all appointments after 5:30pm Mon-Sat, or any time on
-                    a Sunday or public holiday.
+                    This surcharge applies for any appointment that begins outside regular opening
+                    hours, e.g. public holidays, any time on Fri-Mon, or before 9:00am or after 5:30pm Tue-Thu.
                   </p>
                 </td>
                 <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">

@@ -82,7 +82,7 @@ const pageStructuredData: Graph = {
       inLanguage: 'en-AU',
       ...commonSiteAndOrgData,
       dateCreated: '2023-09-21T20:39:00+11:00',
-      dateModified: '2023-10-15T14:05:00+11:00', // TODO: This should change every deployment
+      dateModified: '2023-12-27T19:40:00+11:00', // TODO: This should change every deployment
       provider: { '@id': OrganizationId },
     } as WebSite,
     {
@@ -95,7 +95,7 @@ const pageStructuredData: Graph = {
       image: { '@id': LogoId },
       openingHoursSpecification: {
         '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        dayOfWeek: ['Tuesday', 'Wednesday', 'Thursday'],
         opens: '09:00:00',
         closes: '17:30:00',
       } as OpeningHoursSpecification,

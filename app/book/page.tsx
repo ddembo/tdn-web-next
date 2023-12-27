@@ -21,15 +21,15 @@ export default function BookingPage() {
           <SiteLogoFull />
         </div>
         <H1 variant="h2">Book an appointment</H1>
-        <p className="text-sm italic py-0 my-0">Open Mon - Sat: 9:00am - late (5:30pm last appointment)</p>
+        <p className="text-sm italic py-0 my-0">Open Tue - Thu: 9:00am - late (5:30pm last appointment)</p>
         <InfoPanel>
           <ul className="list-disc pl-4">
             <li>
               <p className="text-sm mb-1">
                 The booking system may limit available times to prevent overbooking. Also, I can
-                accommodate appointments outside my regular hours. If you don&apos;t see your
-                preferred time, DM @thedreamynails on Instagram and I&apos;ll do my best to
-                accommodate you.
+                sometimes accommodate appointments outside my regular hours by prior arrangement.
+                If you don&apos;t see your preferred time, DM @thedreamynails on Instagram and
+                I&apos;ll do my best to accommodate you.
               </p>
             </li>
             <li>
@@ -40,8 +40,7 @@ export default function BookingPage() {
             </li>
             <li>
               <p className="text-sm mb-1">
-                Appointments after 5.30pm Mon-Sat, or any time on a Sunday or public holiday, will
-                incur an additional fee of $20.
+                Appointments that begin outide my regular hours will incur an additional fee of $20. This includes before 9:00am or after 5.30pm Tue-Thu, any time Sun-Mon, or public holidays.
               </p>
             </li>
             <li>
