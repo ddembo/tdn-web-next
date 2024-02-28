@@ -44,7 +44,7 @@ export default function SiteCTASection({ hideServiceMenu = false }: SiteCTASecti
                   <p className="px-4">
                     <strong>Tue - Thu</strong>: 9:00am - late
                     <br />
-                    (5:30pm last appointment)
+                    (6:30pm last appointment)
                   </p>
                 </li>
               </ul>
