@@ -34,7 +34,7 @@ export default function ServiceMenu() {
             <tbody>
               <tr>
                 <td className="py-4">
-                  <H3 className="mb-0 lg:mb-0">Naked manicure</H3>
+                  <H3 className="mb-0 lg:mb-0">Naked mani</H3>
                   <p className="text-sm">
                     Includes signature cuticle care, buff & shape and a choice of clear top coat.
                   </p>
@@ -42,6 +42,21 @@ export default function ServiceMenu() {
                 <td className="py-4 align-top pl-4 min-w-[115px] lg:min-w-[125px]">
                   <Heading as="p" variant="h3" className="lg:max-w-full">
                     $55
+                  </Heading>
+                </td>
+              </tr>
+
+              <tr>
+                <td className="pt-4">
+                  <H3 className="mb-0 lg:mb-0">Removal + Naked mani</H3>
+                  <p className="text-sm mb-2">
+                    Includes soak-off with acetone, signature cuticle care, buff & shape and a
+                    choice of clear top coat.
+                  </p>
+                </td>
+                <td className="pt-4 align-top pl-4">
+                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
+                    $65
                   </Heading>
                 </td>
               </tr>
@@ -85,36 +100,6 @@ export default function ServiceMenu() {
                 <td className="align-top pl-4">
                   <Heading as="p" variant="h4" className="mb-0 lg:mb-0 lg:max-w-full">
                     $75
-                  </Heading>
-                </td>
-              </tr>
-
-              <tr>
-                <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Removal manicure</H3>
-                  <p className="text-sm mb-2">
-                    Includes soak-off with acetone, signature cuticle care, buff & shape and a
-                    choice of clear top coat.
-                  </p>
-                </td>
-                <td className="pt-4 align-top pl-4">
-                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $65
-                  </Heading>
-                </td>
-              </tr>
-
-              <tr>
-                <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Removal</H3>
-                  <p className="text-sm mb-2">
-                    A soak-off with acetone. This price only applies if followed by one of the base
-                    services above, otherwise please book a <b>removal manicure</b>.
-                  </p>
-                </td>
-                <td className="pt-4 align-top pl-4">
-                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $20
                   </Heading>
                 </td>
               </tr>
@@ -191,6 +176,21 @@ export default function ServiceMenu() {
             <tbody>
               <tr>
                 <td className="pt-4">
+                  <H3 className="mb-0 lg:mb-0">Removal with base service</H3>
+                  <p className="text-sm mb-2">
+                    A soak-off with acetone. This price only applies if followed by one of the base
+                    services above.
+                  </p>
+                </td>
+                <td className="pt-4 align-top pl-4">
+                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
+                    $20
+                  </Heading>
+                </td>
+              </tr>
+
+              <tr>
+                <td className="pt-4">
                   <H3 className="mb-0 lg:mb-0">Nail repair</H3>
                   <p className="text-sm">Request for a repair on a chipped, broken or torn nail.</p>
                 </td>
@@ -227,9 +227,7 @@ export default function ServiceMenu() {
 
               <tr>
                 <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">
-                    After-hours appointments
-                  </H3>
+                  <H3 className="mb-0 lg:mb-0">After-hours appointments</H3>
                   <p className="text-sm">
                     Appointments outside of regular hours are available at our discretion and will
                     incur a $20 surcharge. This includes appointments that start after 6:30pm on a
