@@ -25,13 +25,42 @@ export default function ServiceMenu() {
       <Hero title={<H1>Service menu</H1>} />
       <Section as="article">
         <Section.Column>
-          <H2>Base services</H2>
+          <H2>Base service</H2>
           <p className="text-sm italic">
             The Dreamy Nails is a gel-only salon. All services finish with cuticle oil and a
             hand-cream massage.
           </p>
           <table className="mr-auto w-full min-w-[66%] lg:w-[66%]">
             <tbody>
+              <tr>
+                <td className="py-4">
+                  <H3 className="mb-0 lg:mb-0">Naked manicure</H3>
+                  <p className="text-sm">
+                    Includes signature cuticle care, buff & shape and a choice of clear top coat.
+                  </p>
+                </td>
+                <td className="py-4 align-top pl-4 min-w-[115px] lg:min-w-[125px]">
+                  <Heading as="p" variant="h3" className="lg:max-w-full">
+                    $55
+                  </Heading>
+                </td>
+              </tr>
+
+              <tr>
+                <td className="pt-4">
+                  <H3 className="mb-0 lg:mb-0">Soft gel extensions</H3>
+                  <p className="text-sm mb-2">
+                    Includes signature cuticle care, nail prep, application of soft gel extensions
+                    with a choice of up to 3 gel colours.
+                  </p>
+                </td>
+                <td className="pt-4 align-top pl-4">
+                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
+                    $95
+                  </Heading>
+                </td>
+              </tr>
+
               <tr>
                 <td className="pt-4">
                   <H3 className="mb-0 lg:mb-0">Structured manicure (BIAB)</H3>
@@ -42,7 +71,7 @@ export default function ServiceMenu() {
                 </td>
                 <td className="pt-4 align-top pl-4">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $80
+                    $90
                   </Heading>
                 </td>
               </tr>
@@ -50,88 +79,57 @@ export default function ServiceMenu() {
                 <td className="pl-4">
                   <H4>Infill</H4>
                   <p className="text-sm mb-2">
-                    For clients returning to The Dreamy Nails within 2-4 weeks.
+                    For clients returning to The Dreamy Nails within 3 weeks.
                   </p>
                 </td>
-                <td className="pt-1 align-top pl-4">
+                <td className="align-top pl-4">
                   <Heading as="p" variant="h4" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $65
-                  </Heading>
-                </td>
-              </tr>
-              <tr>
-                <td className="pt-1 pl-4">
-                  <H4>Xl — xxxl length</H4>
-                </td>
-                <td className="pt-1 align-top pl-4">
-                  <Heading as="p" variant="h4" className="lg:max-w-full">
-                    +$15
+                    $75
                   </Heading>
                 </td>
               </tr>
 
               <tr>
                 <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Soft gel extensions</H3>
+                  <H3 className="mb-0 lg:mb-0">Removal manicure</H3>
                   <p className="text-sm mb-2">
-                    Includes detailed cuticle care, nail prep, application of soft gel extensions
-                    with a choice of up to 3 gel colours.
+                    Includes soak-off with acetone, signature cuticle care, buff & shape and a
+                    choice of clear top coat.
                   </p>
                 </td>
                 <td className="pt-4 align-top pl-4">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $80
-                  </Heading>
-                </td>
-              </tr>
-              <tr>
-                <td className="pl-4">
-                  <H4>Infill</H4>
-                  <p className="text-sm mb-2">
-                    For clients returning to The Dreamy Nails within 2-4 weeks.
-                  </p>
-                </td>
-                <td className="pt-1 align-top pl-4">
-                  <Heading as="p" variant="h4" className="mb-0 lg:mb-0 lg:max-w-full">
                     $65
-                  </Heading>
-                </td>
-              </tr>
-              <tr>
-                <td className="pt-1 pl-4">
-                  <H4>Xl — xxxl length</H4>
-                </td>
-                <td className="pt-1 align-top pl-4">
-                  <Heading as="p" variant="h4" className="lg:max-w-full">
-                    +$15
                   </Heading>
                 </td>
               </tr>
 
               <tr>
-                <td className="py-4">
-                  <H3 className="mb-0 lg:mb-0">Naked manicure</H3>
-                  <p className="text-sm">
-                    Includes detailed cuticle care, buff & shape and a choice of clear top coat
+                <td className="pt-4">
+                  <H3 className="mb-0 lg:mb-0">Removal</H3>
+                  <p className="text-sm mb-2">
+                    A soak-off with acetone. This price only applies if followed by one of the base
+                    services above, otherwise please book a <b>removal manicure</b>.
                   </p>
                 </td>
-                <td className="py-4 align-top pl-4 min-w-[115px] lg:min-w-[125px]">
-                  <Heading as="p" variant="h3" className="lg:max-w-full">
-                    $55
+                <td className="pt-4 align-top pl-4">
+                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
+                    $20
                   </Heading>
                 </td>
               </tr>
             </tbody>
           </table>
 
-          <H2 className="mt-8 lg:mt-12">Nail art packages</H2>
+          <H2 className="mt-8 lg:mt-12">Nail art</H2>
           <table className="mr-auto w-full min-w-[66%] lg:w-[66%]">
             <tbody>
               <tr>
                 <td className="pt-4">
                   <H3 className="mb-0 lg:mb-0">Star dust</H3>
                   <p className="text-sm">
-                    Includes stickers, chrome, simple lines/swirls, hearts, stars
+                    Stickers, single chrome colour, cat eye, minimal design (e.g. daisy, heart,
+                    stars, etc).
                   </p>
                 </td>
                 <td className="pt-4 align-top pl-4 w-[80px] lg:w-[125px]">
@@ -145,13 +143,13 @@ export default function ServiceMenu() {
                 <td className="pt-4">
                   <H3 className="mb-0 lg:mb-0">Divine</H3>
                   <p className="text-sm">
-                    Includes a single colour airbrush, chrome, single colour aura encapsulated
-                    ombre, marble
+                    French tips, marble, ombre, aura, abstract lines, 1-2 complex feature nails,
+                    tortoise shell.
                   </p>
                 </td>
                 <td className="pt-4 align-top pl-4">
                   <Heading as="p" variant="h3" className="lg:max-w-full">
-                    $30
+                    $35
                   </Heading>
                 </td>
               </tr>
@@ -160,79 +158,28 @@ export default function ServiceMenu() {
                 <td className="pt-4">
                   <H3 className="mb-0 lg:mb-0">Celestial</H3>
                   <p className="text-sm">
-                    Includes a multi-colour airbrush colour, multi-colour aura colour, 3d art
+                    Multi nail art design (10 nails), multi chrome, 3D textures, airbrushing effect,
+                    1—2 character design, stones/shells, simple charms, intricate designs.
                   </p>
                 </td>
                 <td className="pt-4 align-top pl-4">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $40
+                    $50
                   </Heading>
                 </td>
               </tr>
 
               <tr>
                 <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Clean girl</H3>
-                  <p className="text-sm">Includes French/micro French tips</p>
-                </td>
-                <td className="pt-4 align-top pl-4">
-                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $35
-                  </Heading>
-                </td>
-              </tr>
-
-              <tr>
-                <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">The Dreamy freestyle</H3>
+                  <H3 className="mb-0 lg:mb-0">Dreamy Omakase</H3>
                   <p className="text-sm">
-                    Includes a multi-colour airbrush colour, multi-colour aura colour, 3D art
+                    Omakase — I leave the details up to you. Give me a brief or a theme and let me
+                    create works of art on your nails. Push beyond boundaries of just nails.
                   </p>
                 </td>
                 <td className="pt-4 align-top pl-4">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $70
-                  </Heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <H2 className="mt-8 lg:mt-12">Bling</H2>
-          <table className="mr-auto w-full min-w-[66%] lg:w-[66%]">
-            <tbody>
-              <tr>
-                <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Small</H3>
-                  <p className="text-sm">Mini to small crystals, pearls and metallic balls</p>
-                </td>
-                <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
-                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $0.6/nail
-                  </Heading>
-                </td>
-              </tr>
-
-              <tr>
-                <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Medium</H3>
-                  <p className="text-sm">Medium charms, crystals, bows, hearts, character</p>
-                </td>
-                <td className="pt-4 align-top pl-4">
-                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $3/nail
-                  </Heading>
-                </td>
-              </tr>
-
-              <tr>
-                <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Large</H3>
-                  <p className="text-sm">Large charms, crystals, dangling, 3D</p>
-                </td>
-                <td className="pt-4 align-top pl-4">
-                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $5/nail
+                    $60
                   </Heading>
                 </td>
               </tr>
@@ -244,23 +191,8 @@ export default function ServiceMenu() {
             <tbody>
               <tr>
                 <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Gel Removal (no SNS or acrylic)</H3>
-                  <p className="text-sm">
-                    An acetone soak-off to remove a previous gel nail enhancement. Please note that
-                    this does not include any manicure.
-                  </p>
-                </td>
-                <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
-                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $20
-                  </Heading>
-                </td>
-              </tr>
-
-              <tr>
-                <td className="pt-4">
                   <H3 className="mb-0 lg:mb-0">Nail repair</H3>
-                  <p className="text-sm">Request for a repair on a chipped, broken or torn nail</p>
+                  <p className="text-sm">Request for a repair on a chipped, broken or torn nail.</p>
                 </td>
                 <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
@@ -287,12 +219,21 @@ export default function ServiceMenu() {
 
               <tr>
                 <td className="pt-4">
+                  <H3 className="mb-0 lg:mb-0">Charms</H3>
+                  <p className="text-sm">Price is variable depending on your specific needs.</p>
+                </td>
+                <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">&nbsp;</td>
+              </tr>
+
+              <tr>
+                <td className="pt-4">
                   <H3 className="mb-0 lg:mb-0">
-                    After-hours, weekend or public holiday appointment
+                    After-hours appointments
                   </H3>
                   <p className="text-sm">
-                    This surcharge applies for any appointment that begins outside regular opening
-                    hours, e.g. public holidays, any time on Fri-Mon, or before 9:00am or after 5:30pm Tue-Thu.
+                    Appointments outside of regular hours are available at our discretion and will
+                    incur a $20 surcharge. This includes appointments that start after 6:30pm on a
+                    weekday, or any time on a weekend or public holiday.
                   </p>
                 </td>
                 <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
@@ -305,9 +246,9 @@ export default function ServiceMenu() {
           </table>
 
           <p className="text-sm italic font-extralight">
-            This service menu is only an indication, and prices may vary depending on infills,
-            complexity of nail art, and any extras at our discretion. Please send a DM if unsure,
-            we&apos;ll always be transparent and up-front about additional costs.
+            This service menu is only an indication, and prices may vary depending on complexity of
+            nail art, and any extras at our discretion. Please send a DM if unsure, we’ll always be
+            transparent and up-front about additional costs.
           </p>
         </Section.Column>
       </Section>

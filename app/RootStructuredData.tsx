@@ -64,7 +64,7 @@ const pageStructuredData: Graph = {
       // NOTE: created issue #13 to improve datetime handling here
       // COULD potentially use a vscode keybinding or snippet too https://stackoverflow.com/questions/38780057/how-to-insert-current-date-time-in-vscode
       dateCreated: '2023-09-21T20:39:00+11:00',
-      dateModified: '2023-10-15T14:05:00+11:00',
+      dateModified: '2024-02-28T21:40:00+11:00',
       provider: { '@id': OrganizationId },
       about: { '@id': OrganizationId },
       breadcrumb: { '@id': BreadcrumbId },
@@ -82,7 +82,7 @@ const pageStructuredData: Graph = {
       inLanguage: 'en-AU',
       ...commonSiteAndOrgData,
       dateCreated: '2023-09-21T20:39:00+11:00',
-      dateModified: '2023-12-27T19:40:00+11:00', // TODO: This should change every deployment
+      dateModified: '2024-02-28T21:40:00+11:00', // TODO: This should change every deployment
       provider: { '@id': OrganizationId },
     } as WebSite,
     {
@@ -97,7 +97,7 @@ const pageStructuredData: Graph = {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Tuesday', 'Wednesday', 'Thursday'],
         opens: '09:00:00',
-        closes: '17:30:00',
+        closes: '18:30:00',
       } as OpeningHoursSpecification,
     } as NailSalon,
   ],
