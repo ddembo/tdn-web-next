@@ -1,4 +1,3 @@
-import SiteCTASection from '@/components/SiteCTASection/SiteCTASection';
 import SiteFooter from '@/components/SiteFooter/SiteFooter';
 import SiteHeader from '@/components/SiteHeader/SiteHeader';
 

@@ -44,11 +44,6 @@ export default function SiteHeader() {
                 Service Menu
               </ButtonLink>
             </li>
-            <li className="block py-2">
-              <ButtonLink href="/book" variant="cta">
-                Book now
-              </ButtonLink>
-            </li>
           </ul>
         </nav>
       </div>

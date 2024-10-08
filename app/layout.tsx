@@ -21,7 +21,7 @@ const fontDMSans = DM_Sans({
  *  The article they referenced has been updated. For now, we'll manually set it.
  */
 export const metadata: Metadata = {
-  title: 'The Dreamy Nails Sydney | BIAB, nail art, manicures and press-on nails',
+  title: 'The Dreamy Nails Melbourne | BIAB, nail art, manicures and press-on nails',
   icons: [
     {
       rel: 'icon',

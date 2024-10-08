@@ -15,7 +15,7 @@ const pageStructuredData: Graph = {
       inLanguage: 'en-AU',
       isPartOf: { '@id': SiteNodeId },
       dateCreated: '2023-09-21T20:39:00+11:00',
-      dateModified: '2024-02-28T21:40:00+11:00',
+      dateModified: '2024-10-08T21:20:00+11:00',
       provider: { '@id': OrganizationId },
       breadcrumb: { '@id': BreadcrumbId },
       thumbnailUrl: LogoUrl,

@@ -14,7 +14,7 @@ const pageStructuredData: Graph = {
       '@id': ThisPageId,
       isPartOf: { '@id': SiteNodeId },
       dateCreated: '2023-09-21T20:39:00+11:00',
-      dateModified: '2023-12-27T19:55:00+11:00',
+      dateModified: '2024-10-08T21:20:00+11:00',
       provider: { '@id': OrganizationId },
       breadcrumb: { '@id': BreadcrumbId },
       thumbnailUrl: LogoUrl,
