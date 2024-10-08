@@ -18,8 +18,7 @@ export default function SiteCTASection({ hideServiceMenu = false }: SiteCTASecti
         <Section as="div">
           <Section.Column doubleWidth>
             <p>
-              Let me take care of you in my private, clean home salon — away from all
-              the hustle and bustle — with a beautiful nail design tailored just for you.
+              Let me take care of you in my private, clean salon space with a beautiful nail design tailored just for you.
             </p>
             <p>
               If you have any issues, questions, or to book an after-hours appointment, please{' '}
@@ -35,16 +34,9 @@ export default function SiteCTASection({ hideServiceMenu = false }: SiteCTASecti
                   </li>
                 )}
                 <li className="block py-2">
-                  <ButtonLink href="/book" variant="cta">
-                    Book now
-                  </ButtonLink>
-                </li>
-                <li className="block py-2">
-                  <H3 variant="h4">Opening hours</H3>
+                  <H3 variant="h4">Re-opening soon!</H3>
                   <p className="px-4">
-                    <strong>Tue - Thu</strong>: 9:00am - late
-                    <br />
-                    (6:30pm last appointment)
+                    Stay tuned for details.
                   </p>
                 </li>
               </ul>

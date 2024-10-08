@@ -31,7 +31,7 @@ const commonSiteAndOrgData: Partial<WebSite> & Partial<NailSalon> = {
   name: 'The Dreamy Nails',
   url: HOMEPAGE_URL,
   alternateName: 'thedreamynails.com',
-  description: 'Sydney BIAB nail art, manicures & press-ons',
+  description: 'Melbourne BIAB nail art, manicures & press-ons',
   sameAs: didResolveVars ? [INSTAGRAM_URL, TIKTOK_URL] : undefined,
 };
 
@@ -41,10 +41,10 @@ const pageStructuredData: Graph = {
     {
       '@type': 'PostalAddress',
       '@id': AddressId,
-      addressLocality: 'Sydney',
-      addressRegion: 'NSW',
+      addressLocality: 'Melbourne',
+      addressRegion: 'VIC',
       addressCountry: 'AU',
-      postalCode: '2043',
+      postalCode: '3000',
     } as PostalAddress,
     {
       '@type': 'ImageObject',
@@ -64,7 +64,7 @@ const pageStructuredData: Graph = {
       // NOTE: created issue #13 to improve datetime handling here
       // COULD potentially use a vscode keybinding or snippet too https://stackoverflow.com/questions/38780057/how-to-insert-current-date-time-in-vscode
       dateCreated: '2023-09-21T20:39:00+11:00',
-      dateModified: '2024-02-28T21:40:00+11:00',
+      dateModified: '2024-10-08T21:20:00+11:00',
       provider: { '@id': OrganizationId },
       about: { '@id': OrganizationId },
       breadcrumb: { '@id': BreadcrumbId },
@@ -82,7 +82,7 @@ const pageStructuredData: Graph = {
       inLanguage: 'en-AU',
       ...commonSiteAndOrgData,
       dateCreated: '2023-09-21T20:39:00+11:00',
-      dateModified: '2024-02-28T21:40:00+11:00', // TODO: This should change every deployment
+      dateModified: '2024-10-08T21:20:00+11:00', // TODO: This should change every deployment
       provider: { '@id': OrganizationId },
     } as WebSite,
     {
