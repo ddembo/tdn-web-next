@@ -27,16 +27,20 @@ export default function ServiceMenu() {
         <Section.Column>
           <H2>Base service</H2>
           <p className="text-sm italic">
-            The Dreamy Nails is a gel-only salon. All services finish with cuticle oil and a
-            hand-cream massage.
+            The Dreamy Nails is a gel-only salon. All services includes cuticle oil and hand-cream.
           </p>
           <table className="mr-auto w-full min-w-[66%] lg:w-[66%]">
             <tbody>
               <tr>
                 <td className="py-4">
-                  <H3 className="mb-0 lg:mb-0">Naked manicure</H3>
+                  <H3 className="mb-0 lg:mb-0">Naked Manicure</H3>
                   <p className="text-sm">
-                    Includes signature cuticle care, buff & shape and a choice of clear top coat.
+                    Experience our meticulous signature e-file manicure, designed to enhance your
+                    natural nails.
+                  </p>
+                  <p className="text-sm mb-2">
+                    This treatment includes expert cuticle care, precision shaping and buffing,
+                    finished with a glossy clear top coat for a flawless, polished look.
                   </p>
                 </td>
                 <td className="py-4 align-top pl-4 min-w-[115px] lg:min-w-[125px]">
@@ -48,73 +52,40 @@ export default function ServiceMenu() {
 
               <tr>
                 <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Soft gel extensions</H3>
-                  <p className="text-sm mb-2">
-                    Includes signature cuticle care, nail prep, application of soft gel extensions
-                    with a choice of up to 3 gel colours.
+                  <H3 className="mb-0 lg:mb-0">Structured E-file Manicure</H3>
+                  <p className="text-sm">
+                    Indulge in the ultimate nail-strengthening treatment with our Structured E-file
+                    Manicure, featuring a premium builder gel.
+                  </p>
+                  <p className="text-sm">
+                    This service is perfect for those seeking strong, healthy nails, offering a
+                    protective overlay that enhances durability while promoting natural nail growth.
+                  </p>
+                  <p className="text-sm italic font-extralight mb-2">
+                    Please note: for new clients, if removal of existing builder gel is required, a
+                    $20 fee may apply at my discretion.
                   </p>
                 </td>
                 <td className="pt-4 align-top pl-4">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $95
+                    $100
                   </Heading>
                 </td>
               </tr>
 
               <tr>
                 <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Structured manicure (BIAB)</H3>
+                  <H3 className="mb-0 lg:mb-0">Removal + Naked Manicure</H3>
                   <p className="text-sm mb-2">
-                    Includes detailed cuticle care, nail prep, and application of a builder gel and
-                    gel colour over the natural nails.
-                  </p>
-                </td>
-                <td className="pt-4 align-top pl-4">
-                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $90
-                  </Heading>
-                </td>
-              </tr>
-              <tr>
-                <td className="pl-4">
-                  <H4>Infill</H4>
-                  <p className="text-sm mb-2">
-                    For clients returning to The Dreamy Nails within 3 weeks.
-                  </p>
-                </td>
-                <td className="align-top pl-4">
-                  <Heading as="p" variant="h4" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $75
-                  </Heading>
-                </td>
-              </tr>
-
-              <tr>
-                <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Removal manicure</H3>
-                  <p className="text-sm mb-2">
-                    Includes soak-off with acetone, signature cuticle care, buff & shape and a
-                    choice of clear top coat.
+                    Enjoy a seamless gel removal process, followed by our luxurious e-file manicure.
+                    This service includes a gentle acetone soak-off, precision cuticle care,
+                    buffing, shaping, and a choice of a high-gloss clear top coat to restore your
+                    nails to their natural beauty.
                   </p>
                 </td>
                 <td className="pt-4 align-top pl-4">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
                     $65
-                  </Heading>
-                </td>
-              </tr>
-
-              <tr>
-                <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Removal</H3>
-                  <p className="text-sm mb-2">
-                    A soak-off with acetone. This price only applies if followed by one of the base
-                    services above, otherwise please book a <b>removal manicure</b>.
-                  </p>
-                </td>
-                <td className="pt-4 align-top pl-4">
-                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $20
                   </Heading>
                 </td>
               </tr>
@@ -186,59 +157,15 @@ export default function ServiceMenu() {
             </tbody>
           </table>
 
-          <H2 className="mt-8 lg:mt-12">Add-ons</H2>
           <table className="mb-8 mr-auto w-full min-w-[66%] lg:w-[66%]">
             <tbody>
               <tr>
                 <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Nail repair</H3>
-                  <p className="text-sm">Request for a repair on a chipped, broken or torn nail.</p>
-                </td>
-                <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
-                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $5/nail
-                  </Heading>
-                </td>
-              </tr>
-
-              <tr>
-                <td className="pt-4">
                   <H3 className="mb-0 lg:mb-0">Cuticle oil pen</H3>
-                  <p className="text-sm">
-                    My homemade natural cuticle oil is vegan, cruelty free, and will keep your
-                    cuticles looking and feeling their best between visits. Made from nourishing
-                    ingredients such as jojoba, calendula and Vitamin E.
-                  </p>
                 </td>
                 <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
                   <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $10
-                  </Heading>
-                </td>
-              </tr>
-
-              <tr>
-                <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">Charms</H3>
-                  <p className="text-sm">Price is variable depending on your specific needs.</p>
-                </td>
-                <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">&nbsp;</td>
-              </tr>
-
-              <tr>
-                <td className="pt-4">
-                  <H3 className="mb-0 lg:mb-0">
-                    After-hours appointments
-                  </H3>
-                  <p className="text-sm">
-                    Appointments outside of regular hours are available at our discretion and will
-                    incur a $20 surcharge. This includes appointments that start after 6:30pm on a
-                    weekday, or any time on a weekend or public holiday.
-                  </p>
-                </td>
-                <td className="pt-4 align-top pl-4 w-[100px] lg:w-[125px]">
-                  <Heading as="p" variant="h3" className="mb-0 lg:mb-0 lg:max-w-full">
-                    $20
+                    $15
                   </Heading>
                 </td>
               </tr>
